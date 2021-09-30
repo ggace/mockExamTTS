@@ -1,9 +1,9 @@
 from gtts import gTTS
 import json
 
-year = 2019
-basicPath = rf"sources/{year}"
-resultPath = rf"output/{year}"
+year = 2021
+basicPath = rf"sources\{year}"
+resultPath = rf"output\{year}"
 
 problems = list(range(18, 25))+ list(range(29, 41))
 
@@ -13,7 +13,7 @@ for problem in problems:
     content = json_data["content"]
     
     tts_number = gTTS(text=f"{year}년 {problem}번", lang='ko')
-    tts_content = gTTS(text=content, lang='en')
+    tts_content = gTTS(text=f"{content},", lang='en')
     
     fileName = rf"{resultPath}\{year}_{problem}.mp3"
 
@@ -21,4 +21,6 @@ for problem in problems:
     tts_number.write_to_fp(f)
     tts_content.write_to_fp(f)
     f.close()
+
+    print(f"{year} : {problem}")
     
