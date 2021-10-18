@@ -16,7 +16,57 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <div id="app">
+            <div v-for="l in lists">
+                <div>{{l}}</div>
+            </div>
+        </div>
         
-        <script src="" async defer></script>
+
+        <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script defer="defer">
+        
+        let app = new Vue({
+            el: '#app',
+            data: {
+                
+                    lists: null
+                
+            },
+            methods: {
+                getList : function(){
+                    fetch("https://ggace.github.io/mockExamTTS/output/2020/list.json")
+					.then((response) =>{
+						cloneResponse = response
+						if(cloneResponse.ok){
+							return cloneResponse.json();
+						}
+						throw new Error("Network reponse was not ok");
+					})
+					.then((json) =>{
+						this.lists = json
+					})
+					.catch((error) =>{
+						console.log(error);
+					});
+                }
+            },
+            created: function(){
+                this.getList()
+            }
+            })
+
+            
+
+        
+
+        
+
+
+        </script>
     </body>
 </html>
