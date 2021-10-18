@@ -1,4 +1,41 @@
 {
-"topic" : "거울의 반사를 이용한 거꾸로된 메세지 작성",
-"content" : " Mirrors and other smooth, shiny surfaces reflect light. We see reflections from such surfaces because the rays of light form an image on the retina of our eyes. Such images are always reversed. Look at yourself in a mirror, wink your right eye and your left eye seems to wink back at you. You can use a mirror to send a coded message to a friend. Stand a mirror upright on the table, so that a piece of paper on the table can be clearly seen in the mirror. Now write a message that looks right when you look in the mirror. Keep your eyes on the reflected image while you are writing and not on your paper. After a little practice, it will be easier to write “backwards.” When your friend receives such a message he will be able to read it by holding the paper up to a mirror.  "
+"topic" : "독립 변인과 종속 변인 사이의 인과관계는 다른 변수들을 통제 및 배제할 때 비로소 명확해진다.", 
+"content": [
+    {
+        "eng": "Even though two variables seem to be related, there may not be a causal relationship. ",
+        "kor": ""
+    },
+    {
+        "eng": "In fact, the two variables may merely seem to be associated with each other due to the effect of some third variable. ",
+        "kor": ""
+    },
+    {
+        "eng": "Sociologists call such misleading relationships spurious. ",
+        "kor": ""
+    },
+    {
+        "eng": "A classic example is the apparent association between children\u2019s shoe size and reading ability. ",
+        "kor": ""
+    },
+    {
+        "eng": "It seems that as shoe size increases, reading ability improves. ",
+        "kor": ""
+    },
+    {
+        "eng": "Does this mean  that the size of one\u2019s feet (independent variable) causes an improvement in reading skills (dependent variable)? ",
+        "kor": ""
+    },
+    {
+        "eng": "Certainly not. ",
+        "kor": ""
+    },
+    {
+        "eng": "This false relationship is caused by a third factor, age, that is related to shoe size as well as reading ability. ",
+        "kor": ""
+    },
+    {
+        "eng": "Hence, when researchers attempt to make causal claims about the relationship between an independent and a dependent variable, they must control for \u2015or rule out \u2015 other variables that may be creating a spurious relationship.",
+        "kor": ""
+    }
+]
 }

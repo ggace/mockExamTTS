@@ -1,4 +1,33 @@
 {
-"topic" : "맛과 냄새보다 우선하는 음식의 시각적인 정보",
-"content" : " Although it is obvious that part of our assessment of food is its visual appearance, it is perhaps surprising how visual input can override taste and smell. People find it very difficult to correctly identify fruit­flavoured drinks if the colour is wrong, for instance an orange drink that is coloured green. Perhaps even more striking is the experience of wine tasters. One study of Bordeaux University students of wine and wine making revealed that they chose tasting notes appropriate for red wines, such as ‘prune and chocolate’, when they were given white wine coloured with a red dye. Experienced New Zealand wine experts were similarly tricked into thinking that the white wine Chardonnay was in fact a red wine, when it had been coloured with a red dye."
+"topic" : "동물들의 후각 능력과 냄새에 대한 선호도 차이는 그들은 유전자와 생태에 따라 다르다.", 
+"content": [
+    {
+        "eng": "Each species of animals can detect a different range of odours. ",
+        "kor": ""
+    },
+    {
+        "eng": "No species can detect all the molecules that are present in the environment in which it lives \u2015 there are some things that we cannot smell but which some other animals can, and vice versa. ",
+        "kor": ""
+    },
+    {
+        "eng": "There are also differences between individuals, relating to the ability to smell an odour, or how pleasantly it seems. ",
+        "kor": ""
+    },
+    {
+        "eng": "For example, some people like the taste of coriander \u2015 known as cilantro in the USA \u2015 while others find it soapy and unpleasant. ",
+        "kor": ""
+    },
+    {
+        "eng": "This effect has an underlying genetic component due to differences in the genes controlling our sense of smell. ",
+        "kor": ""
+    },
+    {
+        "eng": "Ultimately, the selection of scents detected by a given species, and how that odour is perceived, will depend upon the animal\u2019s ecology. ",
+        "kor": ""
+    },
+    {
+        "eng": "The response profile of each species will enable it to locate sources of smell that are relevant to it and to respond accordingly.",
+        "kor": ""
+    }
+]
 }

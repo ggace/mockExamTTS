@@ -1,4 +1,45 @@
 {
-"topic" : "단순한 잘못된 가정의 수정이 인류를 진보하게 한다.",
-"content" : " We make decisions based on what we think we know. It wasn’t too long ago that the majority of people believed the world was flat. This perceived truth impacted behavior. During this period, there was very little exploration. People feared that if they traveled too far they might fall off the edge of the earth. So for the most part they didn’t dare to travel. It wasn’t until that minor detail was revealed ─ the world is round ─ that behaviors changed on a massive scale. Upon this discovery, societies began to travel across the planet. Trade routes were established; spices were traded. New ideas, like mathematics, were shared between societies which allowed for all kinds of innovations and advancements. The correction of a simple false assumption moved the human race forward."
+"topic" : "적목 현상이 발생하는 이유", 
+"content": [
+    {
+        "eng": "Imagine yourself at a party. ",
+        "kor": ""
+    },
+    {
+        "eng": "It is dark and a group of friends ask you to take a picture of them. ",
+        "kor": ""
+    },
+    {
+        "eng": "You grab your camera, point, and shoot your friends. ",
+        "kor": ""
+    },
+    {
+        "eng": "The camera automatically turns on the flash as there is not enough light available to produce a correct exposure. ",
+        "kor": ""
+    },
+    {
+        "eng": "The result is half of your friends appear in the picture with two bright red circles instead of their eyes. ",
+        "kor": ""
+    },
+    {
+        "eng": "This is a common problem called the red-eye effect. ",
+        "kor": ""
+    },
+    {
+        "eng": "It is caused because the light from the flash penetrates the eyes through the pupils, and then gets reflected to the camera from the back of the eyes where a large amount of blood is present. ",
+        "kor": ""
+    },
+    {
+        "eng": "This blood is the reason why the eyes look red in the photograph. ",
+        "kor": ""
+    },
+    {
+        "eng": "This effect is more noticeable when there is not much light in the environment. ",
+        "kor": ""
+    },
+    {
+        "eng": "This is because pupils dilate when it is dark, allowing more light to get inside the eye and producing a larger red-eye effect.",
+        "kor": ""
+    }
+]
 }

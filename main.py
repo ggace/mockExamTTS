@@ -1,13 +1,13 @@
 from gtts import gTTS
 import json
 
-years = [2019, 2020, 2021]
+years = [2020]
 
 for year in years:
     basicPath = rf"sources\{year}"
     resultPath = rf"output\{year}"
 
-    problems = list(range(18, 25))+ list(range(29, 41))
+    problems = list(range(18, 25))+ list(range(29, 42)) + [43]
 
     for problem in problems:
         with open(rf'{basicPath}\{problem}.json', 'r', encoding='UTF8') as f:
