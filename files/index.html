@@ -11,23 +11,29 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.7/tailwind.min.css" />
     </head>
-    <body>
+    <body class="container mx-auto mt-5">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        
         <div id="app">
-            <div>
-                <a href="?path=eng">eng</a>
-                <a href="?path=kor_eng">korEng</a>
-                <a href="?path=topic_eng">topicEng</a>
-                <a href="?path=topic_kor">topicKor</a>
-                <a href="?path=topic_kor_eng">topicKorEng</a>
+        <h1 style="display:flex; justify-content:center" class="text-4xl">2020년 11월({{path}})</h1>
+            <div class="mt-2 mb-5 flex justify-around text-xl underline text-blue-500">
+                <a href="?path=eng">영어</a>
+                <a href="?path=kor_eng">한글/영어</a>
+                <a href="?path=topic_eng">주제/영어</a>
+                <a href="?path=topic_kor">주제/한글</a>
+                <a href="?path=topic_kor_eng">주제/영어/한글</a>
 
             </div>
 
-            <div v-for="l in lists">
-                <audio controls v-bind:src="l" />
+            <hr>
+
+            <div v-for="problem in problems" class="flex justify-center">
+                <div class="flex items-center">{{problem}}번</div>
+                <audio controls v-bind:src="'https://ggace.github.io/mockExamTTS/output/2020/' + path + '/2020_' + problem + '_' + path + '.mp3'" class="m-5 w-7/12"/>
             </div>
         </div>
         
@@ -38,7 +44,16 @@
   crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <script defer="defer">
-        function getQueryString(key) {
+        
+                let app = new Vue({
+            el: '#app',
+            data: {
+                
+                problems: [18,19,20,21,22,23,24,29,30,31,32,33,34,35,36,37,38,39,40,41,43],
+                path: ""
+            },
+            methods: {
+                getQueryString: function (key) {
  
             // 전체 Url을 가져온다.
             var str = location.href;
@@ -83,25 +98,9 @@
             }
             return rst;
         }
-                let app = new Vue({
-            el: '#app',
-            data: {
-                
-                lists: []
-                
             },
-            methods: {
-                setItems : function(){
-                    
-                    
-                    for(let problem of [18,19,20,21,22,23,24,29,30,31,32,33,34,35,36,37,38,39,40,41,43]){
-                        this.lists.push(`https://ggace.github.io/mockExamTTS/output/2020/${getQueryString("path")}/2020_${problem}_${getQueryString("path")}.mp3`)
-                    }
-                    
-                }
-            },
-            created: function(){
-                this.setItems()
+            created: function () {
+                this.path = this.getQueryString("path");
             }
             })
         
