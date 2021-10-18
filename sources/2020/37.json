@@ -3,39 +3,39 @@
 "content": [
     {
         "eng": "Even though two variables seem to be related, there may not be a causal relationship. ",
-        "kor": ""
+        "kor": "비록 두 변인이 관련된 것처럼 보일지라도 인과 관계가 없을 수도 있다. "
     },
     {
         "eng": "In fact, the two variables may merely seem to be associated with each other due to the effect of some third variable. ",
-        "kor": ""
+        "kor": "사실, 그 두 변인은 어떤 제3 변인의 영향으로 단지 서로 관련된 것처럼 보일지도 모른다. "
     },
     {
         "eng": "Sociologists call such misleading relationships spurious. ",
-        "kor": ""
+        "kor": "사회학자들은 이러한 오해의 소지가 있는 관계를 허위라고 부른다. "
     },
     {
         "eng": "A classic example is the apparent association between children\u2019s shoe size and reading ability. ",
-        "kor": ""
+        "kor": "전형적인 예는 아이들의 신발 크기와 읽기 능력 사이의 명백한 연관성이다. "
     },
     {
         "eng": "It seems that as shoe size increases, reading ability improves. ",
-        "kor": ""
+        "kor": "신발 크기가 커질수록, 읽기 능력이 향상되는 것처럼 보인다. "
     },
     {
         "eng": "Does this mean  that the size of one\u2019s feet (independent variable) causes an improvement in reading skills (dependent variable)? ",
-        "kor": ""
+        "kor": "이것이 발 크기(독립 변인)가 읽기 능력(종속 변인)의 향상을 유발한다는 것을 의미하는가? "
     },
     {
         "eng": "Certainly not. ",
-        "kor": ""
+        "kor": "물론 아니다. "
     },
     {
         "eng": "This false relationship is caused by a third factor, age, that is related to shoe size as well as reading ability. ",
-        "kor": ""
+        "kor": "이러한 허위 관계는 읽기 능력은 물론 신발 크기와도 관련이 있는 제3 변인인 연령에 의해 발생한다. "
     },
     {
         "eng": "Hence, when researchers attempt to make causal claims about the relationship between an independent and a dependent variable, they must control for \u2015or rule out \u2015 other variables that may be creating a spurious relationship.",
-        "kor": ""
+        "kor": "따라서, 연구자들이 독립 변인과 종속 변인 사이의 관계에 대한 인과 관계를 주장하려고 할 때 그들은 허위 관계를 만들어 낼 수도 있는 다른 변인들을 통제하거나 배제해야만 한다."
     }
 ]
 }
