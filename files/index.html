@@ -17,8 +17,17 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <div id="app">
+            <div>
+                <a href="?path=eng">eng</a>
+                <a href="?path=kor_eng">korEng</a>
+                <a href="?path=topic_eng">topicEng</a>
+                <a href="?path=topic_kor">topicKor</a>
+                <a href="?path=topic_kor_eng">topicKorEng</a>
+
+            </div>
+
             <div v-for="l in lists">
-                <div>{{l}}</div>
+                <audio controls v-bind:src="l" />
             </div>
         </div>
         
@@ -29,36 +38,73 @@
   crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <script defer="defer">
+        function getQueryString(key) {
+ 
+            // 전체 Url을 가져온다.
+            var str = location.href;
         
-        let app = new Vue({
+            // QueryString의 값을 가져오기 위해서, ? 이후 첫번째 index값을 가져온다.
+            var index = str.indexOf("?") + 1;
+        
+            // Url에 #이 포함되어 있을 수 있으므로 경우의 수를 나눴다.
+            var lastIndex = str.indexOf("#") > -1 ? str.indexOf("#") + 1 : str.length;
+        
+            // index 값이 0이라는 것은 QueryString이 없다는 것을 의미하기에 종료
+            if (index == 0) {
+                return "";
+            }
+        
+            // str의 값은 a=1&b=first&c=true
+            str = str.substring(index, lastIndex); 
+        
+            // key/value로 이뤄진 쌍을 배열로 나눠서 넣는다.
+            str = str.split("&");
+        
+            // 결과값
+            var rst = "";
+        
+            for (var i = 0; i < str.length; i++) {
+        
+                // key/value로 나눈다.
+                // arr[0] = key
+                // arr[1] = value
+                var arr = str[i].split("=");
+        
+                // arr의 length가 2가 아니면 종료
+                if (arr.length != 2) {
+                    break;
+                }
+        
+                // 매개변수 key과 일치하면 결과값에 셋팅
+                if (arr[0] == key) {
+                    rst = arr[1];
+                    break;
+                }
+            }
+            return rst;
+        }
+                let app = new Vue({
             el: '#app',
             data: {
                 
-                    lists: null
+                lists: []
                 
             },
             methods: {
-                getList : function(){
-                    fetch("https://ggace.github.io/mockExamTTS/output/2020/list.json")
-					.then((response) =>{
-						cloneResponse = response
-						if(cloneResponse.ok){
-							return cloneResponse.json();
-						}
-						throw new Error("Network reponse was not ok");
-					})
-					.then((json) =>{
-						this.lists = json
-					})
-					.catch((error) =>{
-						console.log(error);
-					});
+                setItems : function(){
+                    
+                    
+                    for(let problem of [18,19,20,21,22,23,24,29,30,31,32,33,34,35,36,37,38,39,40,41,43]){
+                        this.lists.push(`https://ggace.github.io/mockExamTTS/output/2020/${getQueryString("path")}/2020_${problem}_${getQueryString("path")}.mp3`)
+                    }
+                    
                 }
             },
             created: function(){
-                this.getList()
+                this.setItems()
             }
             })
+        
 
             
 
