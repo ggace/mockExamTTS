@@ -101,6 +101,9 @@
             },
             created: function () {
                 this.path = this.getQueryString("path");
+                if(this.path == ""){
+                    this.path = "topic_kor_eng"
+                }
             }
             })
         
