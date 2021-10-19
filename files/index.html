@@ -31,13 +31,13 @@
 
             <hr>
             <div>
-                <a v-bind:href="'https://ggace.github.io/mockExamTTS/output/2020/' + path + '.zip'" class="text-blue-400 underline block">다운로드</a>
+                <a v-bind:href="'https://ggace.github.io/mockExamTTS/output/2020/' + path + '.zip'" class="text-blue-400 underline block text-sm">다운로드</a>
                 <div class="flex">
-                    <div class="flex items-center">반복</div>
+                    <div class="flex items-center text-sm">반복</div>
                     <audio controls id="loop" v-bind:src="'https://ggace.github.io/mockExamTTS/output/2020/' + path + '/2020_' + problems[playsrcindex % problems.length] + '_' + path + '.mp3'" class="m-5 w-7/12" ></audio>
                 </div>
                 <div v-for="problem in problems" class="flex">
-                    <div class="flex items-center">{{problem}}번</div>
+                    <div class="flex items-center text-sm">{{problem}}번</div>
                     <audio controls v-bind:src="'https://ggace.github.io/mockExamTTS/output/2020/' + path + '/2020_' + problem + '_' + path + '.mp3'" class="m-5 w-7/12"/>
                 </div>
 
