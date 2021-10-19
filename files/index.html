@@ -30,10 +30,19 @@
             </div>
 
             <hr>
+            <div>
+                <a v-bind:href="'https://ggace.github.io/mockExamTTS/output/2020/' + path + '.zip'" class="text-blue-400 underline block">다운로드</a>
+                <div class="flex">
+                    <div class="flex items-center">반복</div>
+                    <audio controls id="loop" v-bind:src="'https://ggace.github.io/mockExamTTS/output/2020/' + path + '/2020_' + problems[playsrcindex % problems.length] + '_' + path + '.mp3'" class="m-5 w-7/12" ></audio>
+                </div>
+                <div v-for="problem in problems" class="flex">
+                    <div class="flex items-center">{{problem}}번</div>
+                    <audio controls v-bind:src="'https://ggace.github.io/mockExamTTS/output/2020/' + path + '/2020_' + problem + '_' + path + '.mp3'" class="m-5 w-7/12"/>
+                </div>
 
-            <div v-for="problem in problems" class="flex justify-center">
-                <div class="flex items-center">{{problem}}번</div>
-                <audio controls v-bind:src="'https://ggace.github.io/mockExamTTS/output/2020/' + path + '/2020_' + problem + '_' + path + '.mp3'" class="m-5 w-7/12"/>
+                
+
             </div>
         </div>
         
@@ -50,7 +59,8 @@
             data: {
                 
                 problems: [18,19,20,21,22,23,24,29,30,31,32,33,34,35,36,37,38,39,40,41,43],
-                path: ""
+                path: "",
+                playsrcindex : 0
             },
             methods: {
                 getQueryString: function (key) {
@@ -104,9 +114,20 @@
                 if(this.path == ""){
                     this.path = "topic_kor_eng"
                 }
+
+                this.playsrcindex = 0;
+
+                
             }
             })
-        
+
+            document.getElementById("loop").onended = function(){
+                    app.playsrcindex += 1;
+                    setTimeout(function(){document.getElementById("loop").play();}, 1500);
+                }
+
+
+            
 
             
 
