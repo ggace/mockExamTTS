@@ -8,10 +8,74 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title></title>
+        
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.7/tailwind.min.css" />
+        <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+        <script>
+        function getAndroidDevName() {
+    var uaAdata = navigator.userAgent;
+    var regex = /Android (.*);.*;\s*(.*)\sBuild/;
+    var match = regex.exec(uaAdata);
+    if (match) {
+        var ver = match[1];
+        var dev_name = match[2];
+        return "Android " + ver + " " + dev_name;
+    }
+    return "Android OS";
+}
+$(document).ready(function () {
+    var os, ua = navigator.userAgent;
+    if (ua.match(/Win(dows )?NT 6\.0/)) {
+        os = "Windows Vista";
+    } else if (ua.match(/Win(dows )?(NT 5\.1|XP)/)) {
+        os = "Windows XP";
+    } else {
+        if ((ua.indexOf("Windows NT 5.1") != -1) || (ua.indexOf("Windows XP") != -1)) {
+            os = "Windows XP";
+        } else if ((ua.indexOf("Windows NT 7.0") != -1) || (ua.indexOf("Windows NT 6.1") != -1)) {
+            os = "Windows 7";
+        } else if ((ua.indexOf("Windows NT 8.0") != -1) || (ua.indexOf("Windows NT 6.2") != -1)) {
+            os = "Windows 8";
+        } else if ((ua.indexOf("Windows NT 8.1") != -1) || (ua.indexOf("Windows NT 6.3") != -1)) {
+            os = "Windows 8.1";
+        } else if ((ua.indexOf("Windows NT 10.0") != -1) || (ua.indexOf("Windows NT 6.4") != -1)) {
+            os = "Windows 10";
+        } else if ((ua.indexOf("iPad") != -1) || (ua.indexOf("iPhone") != -1) || (ua.indexOf("iPod") != -1)) {
+            os = "Apple iOS";
+        } else if (us.indexOf("Android" != -1)) {
+            os = "Android OS";
+        } else if (ua.match(/Win(dows )?NT( 4\.0)?/)) {
+            os = "Windows NT";
+        } else if (ua.match(/Mac|PPC/)) {
+            os = "Mac OS";
+        } else if (ua.match(/Linux/)) {
+            os = "Linux";
+        } else if (ua.match(/(Free|Net|Open)BSD/)) {
+            os = RegExp.$1 + "BSD";
+        } else if (ua.match(/SunOS/)) {
+            os = "Solaris";
+        }
+    }
+    /*if (os.indexOf("Windows") != -1) {
+        if (navigator.userAgent.indexOf('WOW64') > -1 || navigator.userAgent.indexOf('Win64') > -1) {
+            os += ' 64bit';
+        } else {
+            os += ' 32bit';
+        }
+    }*/
+    if(os != "linux"){
+        alert("error");
+        history.back();
+    }
+    
+});
+        </script>
     </head>
     <body class="container mx-auto mt-5">
         <!--[if lt IE 7]>
@@ -47,10 +111,7 @@
         </div>
         
 
-        <script
-  src="https://code.jquery.com/jquery-3.6.0.js"
-  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-  crossorigin="anonymous"></script>
+        
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <script defer="defer">
         
@@ -137,61 +198,6 @@
 
 
         </script>
-        <script>
-        function getAndroidDevName() {
-    var uaAdata = navigator.userAgent;
-    var regex = /Android (.*);.*;\s*(.*)\sBuild/;
-    var match = regex.exec(uaAdata);
-    if (match) {
-        var ver = match[1];
-        var dev_name = match[2];
-        return "Android " + ver + " " + dev_name;
-    }
-    return "Android OS";
-}
-$(document).ready(function () {
-    var os, ua = navigator.userAgent;
-    if (ua.match(/Win(dows )?NT 6\.0/)) {
-        os = "Windows Vista";
-    } else if (ua.match(/Win(dows )?(NT 5\.1|XP)/)) {
-        os = "Windows XP";
-    } else {
-        if ((ua.indexOf("Windows NT 5.1") != -1) || (ua.indexOf("Windows XP") != -1)) {
-            os = "Windows XP";
-        } else if ((ua.indexOf("Windows NT 7.0") != -1) || (ua.indexOf("Windows NT 6.1") != -1)) {
-            os = "Windows 7";
-        } else if ((ua.indexOf("Windows NT 8.0") != -1) || (ua.indexOf("Windows NT 6.2") != -1)) {
-            os = "Windows 8";
-        } else if ((ua.indexOf("Windows NT 8.1") != -1) || (ua.indexOf("Windows NT 6.3") != -1)) {
-            os = "Windows 8.1";
-        } else if ((ua.indexOf("Windows NT 10.0") != -1) || (ua.indexOf("Windows NT 6.4") != -1)) {
-            os = "Windows 10";
-        } else if ((ua.indexOf("iPad") != -1) || (ua.indexOf("iPhone") != -1) || (ua.indexOf("iPod") != -1)) {
-            os = "Apple iOS";
-        } else if (us.indexOf("Android" != -1)) {
-            os = "Android OS";
-        } else if (ua.match(/Win(dows )?NT( 4\.0)?/)) {
-            os = "Windows NT";
-        } else if (ua.match(/Mac|PPC/)) {
-            os = "Mac OS";
-        } else if (ua.match(/Linux/)) {
-            os = "Linux";
-        } else if (ua.match(/(Free|Net|Open)BSD/)) {
-            os = RegExp.$1 + "BSD";
-        } else if (ua.match(/SunOS/)) {
-            os = "Solaris";
-        }
-    }
-    if (os.indexOf("Windows") != -1) {
-        if (navigator.userAgent.indexOf('WOW64') > -1 || navigator.userAgent.indexOf('Win64') > -1) {
-            os += ' 64bit';
-        } else {
-            os += ' 32bit';
-        }
-    }
-    alert(os, ua)
-    
-});
-        </script>
+        
     </body>
 </html>
