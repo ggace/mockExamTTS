@@ -73,6 +73,16 @@ $(document).ready(function () {
         alert("error");
         history.back();
     }
+    else{
+        pw = confirm("pw : ")
+        if(pw == "system"){
+            alert("wrong password");
+            history.back();
+        }
+        else{
+            alert("enter")
+        }
+    }
     
 });
         </script>
