@@ -13,78 +13,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.7/tailwind.min.css" />
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@1.16.0/dist/full.css" rel="stylesheet" type="text/css" />
         <script
   src="https://code.jquery.com/jquery-3.6.0.js"
   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
   crossorigin="anonymous"></script>
         <script>
         function getAndroidDevName() {
-    var uaAdata = navigator.userAgent;
-    var regex = /Android (.*);.*;\s*(.*)\sBuild/;
-    var match = regex.exec(uaAdata);
-    if (match) {
-        var ver = match[1];
-        var dev_name = match[2];
-        return "Android " + ver + " " + dev_name;
-    }
-    return "Android OS";
-}
-$(document).ready(function () {
-    var os, ua = navigator.userAgent;
-    if (ua.match(/Win(dows )?NT 6\.0/)) {
-        os = "Windows Vista";
-    } else if (ua.match(/Win(dows )?(NT 5\.1|XP)/)) {
-        os = "Windows XP";
-    } else {
-        if ((ua.indexOf("Windows NT 5.1") != -1) || (ua.indexOf("Windows XP") != -1)) {
-            os = "Windows XP";
-        } else if ((ua.indexOf("Windows NT 7.0") != -1) || (ua.indexOf("Windows NT 6.1") != -1)) {
-            os = "Windows 7";
-        } else if ((ua.indexOf("Windows NT 8.0") != -1) || (ua.indexOf("Windows NT 6.2") != -1)) {
-            os = "Windows 8";
-        } else if ((ua.indexOf("Windows NT 8.1") != -1) || (ua.indexOf("Windows NT 6.3") != -1)) {
-            os = "Windows 8.1";
-        } else if ((ua.indexOf("Windows NT 10.0") != -1) || (ua.indexOf("Windows NT 6.4") != -1)) {
-            os = "Windows 10";
-        } else if ((ua.indexOf("iPad") != -1) || (ua.indexOf("iPhone") != -1) || (ua.indexOf("iPod") != -1)) {
-            os = "Apple iOS";
-        } else if (us.indexOf("Android" != -1)) {
-            os = "Android OS";
-        } else if (ua.match(/Win(dows )?NT( 4\.0)?/)) {
-            os = "Windows NT";
-        } else if (ua.match(/Mac|PPC/)) {
-            os = "Mac OS";
-        } else if (ua.match(/Linux/)) {
-            os = "Linux";
-        } else if (ua.match(/(Free|Net|Open)BSD/)) {
-            os = RegExp.$1 + "BSD";
-        } else if (ua.match(/SunOS/)) {
-            os = "Solaris";
+            var uaAdata = navigator.userAgent;
+            var regex = /Android (.*);.*;\s*(.*)\sBuild/;
+            var match = regex.exec(uaAdata);
+            if (match) {
+                var ver = match[1];
+                var dev_name = match[2];
+                return "Android " + ver + " " + dev_name;
+            }
+            return "Android OS";
         }
-    }
-    /*if (os.indexOf("Windows") != -1) {
-        if (navigator.userAgent.indexOf('WOW64') > -1 || navigator.userAgent.indexOf('Win64') > -1) {
-            os += ' 64bit';
-        } else {
-            os += ' 32bit';
-        }
-    }*/
-    if(os != "linux"){
-        alert("error");
-        history.back();
-    }
-    else{
-        pw = prompt("pw : ")
-        if(pw == "system"){
-            alert("wrong password");
-            history.back();
-        }
-        else{
-            alert("enter")
-        }
-    }
-    
-});
+        //$(document).ready();
         </script>
     </head>
     <body class="container mx-auto mt-5">
@@ -93,30 +39,38 @@ $(document).ready(function () {
         <![endif]-->
         
         <div id="app" class="m-2">
-            <h1 style="display:flex; justify-content:center" class="text-xl">2020년 11월({{path}})</h1>
-            <div class="mt-2 mb-5 flex justify-around text-sm underline text-blue-500">
-                <a href="?path=eng">영어</a>
-                <a href="?path=kor_eng">한글/영어</a>
-                <a href="?path=topic_eng">주제/영어</a>
-                <a href="?path=topic_kor">주제/한글</a>
-                <a href="?path=topic_kor_eng">주제/영어/한글</a>
-
+            <div v-if="isError">ERROR</div>
+            <div v-if="!isError && !isChekced">
+                <input class="input input-bordered" v-model="pw">
+                <button class="btn btn-primary" v-on:click="checkPw">확인</button>
+                <div>{{message}}</div>
             </div>
+            <div v-if="!isError && isChekced">
+                <h1 style="display:flex; justify-content:center" class="text-xl">2020년 11월({{path}})</h1>
+                <div class="mt-2 mb-5 flex justify-around text-sm underline text-blue-500">
+                    <a href="?path=eng">영어</a>
+                    <a href="?path=kor_eng">한글/영어</a>
+                    <a href="?path=topic_eng">주제/영어</a>
+                    <a href="?path=topic_kor">주제/한글</a>
+                    <a href="?path=topic_kor_eng">주제/영어/한글</a>
 
-            <hr>
-            <div>
-                <a v-bind:href="'https://ggace.github.io/mockExamTTS/output/2020/' + path + '.zip'" class="text-blue-400 underline block text-sm">다운로드</a>
-                <div class="flex">
-                    <div class="flex items-center text-sm">반복</div>
-                    <audio controls id="loop" v-bind:src="'https://ggace.github.io/mockExamTTS/output/2020/' + path + '/2020_' + problems[playsrcindex % problems.length] + '_' + path + '.mp3'" class="m-5 w-7/12" ></audio>
-                </div>
-                <div v-for="problem in problems" class="flex">
-                    <div class="flex items-center text-sm">{{problem}}번</div>
-                    <audio controls v-bind:src="'https://ggace.github.io/mockExamTTS/output/2020/' + path + '/2020_' + problem + '_' + path + '.mp3'" class="m-5 w-7/12"/>
                 </div>
 
-                
+                <hr>
+                <div>
+                    <a v-bind:href="'https://ggace.github.io/mockExamTTS/output/2020/' + path + '.zip'" class="text-blue-400 underline block text-sm">다운로드</a>
+                    <div class="flex">
+                        <div class="flex items-center text-sm">반복</div>
+                        <audio controls id="loop" v-bind:src="'https://ggace.github.io/mockExamTTS/output/2020/' + path + '/2020_' + problems[playsrcindex % problems.length] + '_' + path + '.mp3'" class="m-5 w-7/12" ></audio>
+                    </div>
+                    <div v-for="problem in problems" class="flex">
+                        <div class="flex items-center text-sm">{{problem}}번</div>
+                        <audio controls v-bind:src="'https://ggace.github.io/mockExamTTS/output/2020/' + path + '/2020_' + problem + '_' + path + '.mp3'" class="m-5 w-7/12"/>
+                    </div>
 
+                    
+
+                </div>
             </div>
         </div>
         
@@ -126,71 +80,116 @@ $(document).ready(function () {
         <script defer="defer">
         
                 let app = new Vue({
-            el: '#app',
-            data: {
-                
-                problems: [18,19,20,21,22,23,24,29,30,31,32,33,34,35,36,37,38,39,40,41,43],
-                path: "",
-                playsrcindex : 0
-            },
-            methods: {
-                getQueryString: function (key) {
+                el: '#app',
+                data: {
+                    isError : true,
+                    problems: [18,19,20,21,22,23,24,29,30,31,32,33,34,35,36,37,38,39,40,41,43],
+                    path: "",
+                    playsrcindex : 0,
+                    pw : "aaa",
+                    isChekced : false,
+                    message : ""
+                },
+                methods: {
+                    checkPw : function(){
+                        if(this.pw == "system"){
+                            this.isChekced = true;
+                        }
+                        else {
+                            this.message = "wrong pw"
+                        }
+                    },
+                    getQueryString: function (key) {
  
-            // 전체 Url을 가져온다.
-            var str = location.href;
-        
-            // QueryString의 값을 가져오기 위해서, ? 이후 첫번째 index값을 가져온다.
-            var index = str.indexOf("?") + 1;
-        
-            // Url에 #이 포함되어 있을 수 있으므로 경우의 수를 나눴다.
-            var lastIndex = str.indexOf("#") > -1 ? str.indexOf("#") + 1 : str.length;
-        
-            // index 값이 0이라는 것은 QueryString이 없다는 것을 의미하기에 종료
-            if (index == 0) {
-                return "";
-            }
-        
-            // str의 값은 a=1&b=first&c=true
-            str = str.substring(index, lastIndex); 
-        
-            // key/value로 이뤄진 쌍을 배열로 나눠서 넣는다.
-            str = str.split("&");
-        
-            // 결과값
-            var rst = "";
-        
-            for (var i = 0; i < str.length; i++) {
-        
-                // key/value로 나눈다.
-                // arr[0] = key
-                // arr[1] = value
-                var arr = str[i].split("=");
-        
-                // arr의 length가 2가 아니면 종료
-                if (arr.length != 2) {
-                    break;
-                }
-        
-                // 매개변수 key과 일치하면 결과값에 셋팅
-                if (arr[0] == key) {
-                    rst = arr[1];
-                    break;
-                }
-            }
-            return rst;
-        }
-            },
-            created: function () {
-                this.path = this.getQueryString("path");
-                if(this.path == ""){
-                    this.path = "topic_kor_eng"
-                }
+                        // 전체 Url을 가져온다.
+                        var str = location.href;
+                    
+                        // QueryString의 값을 가져오기 위해서, ? 이후 첫번째 index값을 가져온다.
+                        var index = str.indexOf("?") + 1;
+                    
+                        // Url에 #이 포함되어 있을 수 있으므로 경우의 수를 나눴다.
+                        var lastIndex = str.indexOf("#") > -1 ? str.indexOf("#") + 1 : str.length;
+                    
+                        // index 값이 0이라는 것은 QueryString이 없다는 것을 의미하기에 종료
+                        if (index == 0) {
+                            return "";
+                        }
+                    
+                        // str의 값은 a=1&b=first&c=true
+                        str = str.substring(index, lastIndex); 
+                    
+                        // key/value로 이뤄진 쌍을 배열로 나눠서 넣는다.
+                        str = str.split("&");
+                    
+                        // 결과값
+                        var rst = "";
+                    
+                        for (var i = 0; i < str.length; i++) {
+                    
+                            // key/value로 나눈다.
+                            // arr[0] = key
+                            // arr[1] = value
+                            var arr = str[i].split("=");
+                    
+                            // arr의 length가 2가 아니면 종료
+                            if (arr.length != 2) {
+                                break;
+                            }
+                    
+                            // 매개변수 key과 일치하면 결과값에 셋팅
+                            if (arr[0] == key) {
+                                rst = arr[1];
+                                break;
+                            }
+                        }
+                        return rst;
+                    }
+                },
+                created: function () {
+                    this.path = this.getQueryString("path");
+                    if(this.path == ""){
+                        this.path = "topic_kor_eng"
+                    }
 
-                this.playsrcindex = 0;
-
-                
-            }
-            })
+                    this.playsrcindex = 0;
+                    var os, ua = navigator.userAgent;
+                    if (ua.match(/Win(dows )?NT 6\.0/)) {
+                        os = "Windows Vista";
+                    } else if (ua.match(/Win(dows )?(NT 5\.1|XP)/)) {
+                        os = "Windows XP";
+                    } else {
+                        if ((ua.indexOf("Windows NT 5.1") != -1) || (ua.indexOf("Windows XP") != -1)) {
+                            os = "Windows XP";
+                        } else if ((ua.indexOf("Windows NT 7.0") != -1) || (ua.indexOf("Windows NT 6.1") != -1)) {
+                            os = "Windows 7";
+                        } else if ((ua.indexOf("Windows NT 8.0") != -1) || (ua.indexOf("Windows NT 6.2") != -1)) {
+                            os = "Windows 8";
+                        } else if ((ua.indexOf("Windows NT 8.1") != -1) || (ua.indexOf("Windows NT 6.3") != -1)) {
+                            os = "Windows 8.1";
+                        } else if ((ua.indexOf("Windows NT 10.0") != -1) || (ua.indexOf("Windows NT 6.4") != -1)) {
+                            os = "Windows 10";
+                        } else if ((ua.indexOf("iPad") != -1) || (ua.indexOf("iPhone") != -1) || (ua.indexOf("iPod") != -1)) {
+                            os = "Apple iOS";
+                        } else if (us.indexOf("Android" != -1)) {
+                            os = "Android OS";
+                        } else if (ua.match(/Win(dows )?NT( 4\.0)?/)) {
+                            os = "Windows NT";
+                        } else if (ua.match(/Mac|PPC/)) {
+                            os = "Mac OS";
+                        } else if (ua.match(/Linux/)) {
+                            os = "Linux";
+                        } else if (ua.match(/(Free|Net|Open)BSD/)) {
+                            os = RegExp.$1 + "BSD";
+                        } else if (ua.match(/SunOS/)) {
+                            os = "Solaris";
+                        }
+                    }
+                    if(os == "linux"){
+                        this.isError = false;
+                    }
+                    
+                }
+            });
 
             document.getElementById("loop").onended = function(){
                     app.playsrcindex += 1;
