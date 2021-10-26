@@ -39,7 +39,7 @@
         <![endif]-->
         
         <div id="app" class="m-2">
-            <div>{{os}}</div>
+            <div>{{ua}}</div>
             <div v-if="isError">ERROR</div>
             <div v-if="!isError && !isChekced">
                 <input class="input input-bordered" v-model="pw">
@@ -90,7 +90,7 @@
                     pw : "aaa",
                     isChekced : false,
                     message : "",
-                    os : "undified"
+                    ua : "undifined"
                 },
                 methods: {
                     checkPw : function(){
@@ -186,7 +186,7 @@
                             os = "Solaris";
                         }
 
-                        this.os = os;
+                        this.ua = ua;
                     }
                     if(os == "linux"){
                         this.isError = false;
