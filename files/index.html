@@ -39,7 +39,7 @@
         <![endif]-->
         
         <div id="app" class="m-2">
-            
+            <div>{{ua}}</div>
             <div v-if="isError">ERROR</div>
             <div v-if="!isError && !isChekced">
                 <input class="input input-bordered" v-model="pw">
@@ -89,7 +89,8 @@
                     playsrcindex : 0,
                     pw : "aaa",
                     isChekced : false,
-                    message : ""
+                    message : "",
+                    ua : "undifined"
                 },
                 methods: {
                     checkPw : function(){
@@ -185,7 +186,7 @@
                             os = "Solaris";
                         }
 
-                        
+                        this.ua = ua;
                     }
                     if(os == "Apple iOS" || os == "Android OS"){
                         this.isError = false;
