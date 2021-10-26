@@ -39,6 +39,7 @@
         <![endif]-->
         
         <div id="app" class="m-2">
+            <div>{{os}}</div>
             <div v-if="isError">ERROR</div>
             <div v-if="!isError && !isChekced">
                 <input class="input input-bordered" v-model="pw">
@@ -88,7 +89,8 @@
                     playsrcindex : 0,
                     pw : "aaa",
                     isChekced : false,
-                    message : ""
+                    message : "",
+                    os : "undified"
                 },
                 methods: {
                     checkPw : function(){
@@ -183,6 +185,8 @@
                         } else if (ua.match(/SunOS/)) {
                             os = "Solaris";
                         }
+
+                        this.os = os;
                     }
                     if(os == "linux"){
                         this.isError = false;
