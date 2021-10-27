@@ -40,7 +40,7 @@
         <div id="app" class="m-2">
             
             <div v-if="isError">ERROR</div>
-            <div v-if="!isChekced">
+            <div v-if="!isError && !isChekced">
                 <input class="input input-bordered" v-model="pw" placeholder="pw를 입력해주세요">
                 <button class="btn btn-primary" v-on:click="checkPw">확인</button>
                 <div>{{message}}</div>
