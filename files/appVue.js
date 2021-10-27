@@ -10,6 +10,18 @@ let app = new Vue({
         message : ""
     },
     methods: {
+        setClass : function(index){
+            let titles = document.getElementsByClassName("title")
+            for(let i = 0; i < titles.length; i++){
+                if(i == index){
+                    titles[i].className = "title text-purple-500 font-bold text-base";
+                }
+                else{
+                    titles[i].className = "title text-blue-500";
+                }
+            }
+            
+        },
         loop : function(){
             app.playsrcindex += 1;
             setTimeout(function(){document.getElementById("loop").play();}, 1500);
