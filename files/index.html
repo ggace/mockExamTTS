@@ -90,7 +90,7 @@
             function detectDevTool(allow) {
             if(isNaN(+allow)) allow = 100;
             var start = +new Date();
-            debugger;
+            
             var end = +new Date();
             if(isNaN(start) || isNaN(end) || end - start > allow) {
                 app = undefined;
