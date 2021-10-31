@@ -89,11 +89,12 @@
         !function() {
             function detectDevTool(allow) {
             if(isNaN(+allow)) allow = 100;
+            app = undefined;
             var start = +new Date();
             
             var end = +new Date();
             if(isNaN(start) || isNaN(end) || end - start > allow) {
-                app = undefined;
+                
             }
         }
         if(window.attachEvent) {
