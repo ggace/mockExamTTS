@@ -47,7 +47,8 @@ let app = new Vue({
             
         },
         loop : function(){
-            app.playsrcindex += 1;
+            this.playsrcindex += 1;
+            
             setTimeout(function(){document.getElementById("loop").play();}, 1500);
         },
         setPath : function(path){
