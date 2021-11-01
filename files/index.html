@@ -40,12 +40,12 @@
         <div id="app" class="m-2">
             
             <div v-if="isError">USE Android or IOS</div>
-            <div v-if="!isError && !isChekced">
+            <div v-if="!isChekced">
                 <input class="input input-bordered" v-model="pw" placeholder="pw를 입력해주세요">
                 <button class="btn btn-primary" v-on:click="checkPw">확인</button>
                 <div>{{message}}</div>
             </div>
-            <div v-if="!isError && isChekced">
+            <div v-if="isChekced">
                 <h1 style="display:flex; justify-content:center" class="text-xl">2020년 11월({{path}})</h1>
                 <div class="mt-2 mb-5 flex justify-around text-sm underline text-blue-500">
                     <button v-on:click="setPath('eng'); setClass(0)" class="title">영어</button>
@@ -56,15 +56,23 @@
                 </div>
 
                 <hr>
-                <div>
-                    <a v-bind:href="'https://ggace.github.io/mockExamTTS/output/2020/' + path + '.zip'" class="text-blue-400 underline block text-sm">다운로드</a>
+                <div class="flex flex-col">
+                    <div class="flex">
+                        <a v-bind:href="'https://ggace.github.io/mockExamTTS/output/2020/' + path + '.zip'" class="inline text-blue-400 underline block text-sm">다운로드</a>
+                        <div class="flex flex-grow"></div>
+                        <div class="flex">
+                            <button @click="reduceSpeed()" class="btn btn-secondary btn-outline btn-sm">-</button>
+                            <p id="speed" class="flex items-center">{{speed}}</p>
+                            <button @click="addSpeed()" class="btn btn-secondary btn-outline btn-sm">+</button>
+                        </div>
+                    </div>
                     <div class="flex">
                         <div class="flex items-center text-sm">반복</div>
                         <audio controls id="loop" @ended="loop()" v-bind:src="'https://ggace.github.io/mockExamTTS/output/2020/' + path + '/2020_' + problems[playsrcindex % problems.length] + '_' + path + '.mp3'" class="m-5 w-7/12" ></audio>
                     </div>
                     <div v-for="problem in problems" class="flex">
                         <div class="flex items-center text-sm">{{problem}}번</div>
-                        <audio controls v-bind:src="'https://ggace.github.io/mockExamTTS/output/2020/' + path + '/2020_' + problem + '_' + path + '.mp3'" class="m-5 w-7/12"/>
+                        <audio loop controls v-bind:src="'https://ggace.github.io/mockExamTTS/output/2020/' + path + '/2020_' + problem + '_' + path + '.mp3'" class="m-5 w-7/12"/>
                     </div>
 
                     
@@ -79,79 +87,10 @@
         
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <script defer="defer" src="appVue.js"></script>
-        <script defer="defer">
-        
-        </script>
-        
-
-        <script type="text/javascript" defer="defer">
-
-        !function() {
-            function detectDevTool(allow) {
-            if(isNaN(+allow)) allow = 100;
-            app = undefined;
-        }
-        if(window.attachEvent) {
-            if (document.readyState === "complete" || document.readyState === "interactive") {
-                detectDevTool();
-            window.attachEvent('onresize', detectDevTool);
-            window.attachEvent('onmousemove', detectDevTool);
-            window.attachEvent('onfocus', detectDevTool);
-            window.attachEvent('onblur', detectDevTool);
-            } else {
-                setTimeout(argument.callee, 0);
-            }
-        } else {
-            window.addEventListener('load', detectDevTool);
-            window.addEventListener('resize', detectDevTool);
-            window.addEventListener('mousemove', detectDevTool);
-            window.addEventListener('focus', detectDevTool);
-            window.addEventListener('blur', detectDevTool);
-        }
-        }();
-        
-        Object.defineProperty(console, '_commandLineAPI', { get: function () { throw '콘솔을 사용할 수 없습니다.' } });
         
         
-        // F12키 금지
 
-        $(document).ready(function(){
-
-            $(document).on('keydown',function(e){
-
-                if ( e.keyCode == 123) {  /* F12키 */
-
-                    e.preventDefault();
-
-                    e.returnValue = false;
-
-                }
-
-            });
-
-        });
-
-
-
-        // 마우스오른쪽 클릭방지
-
-        document.onmousedown=disableclick;
-
-        status="마우스오른쪽 클릭금지.";
-
-        function disableclick(event){
-
-            if (event.button==2) {
-
-                alert(status);
-
-                return false;
-
-            }
-
-        }
-
-        </script>
+        <script src="index.js" defer="defer"></script>
         
         
     </body>

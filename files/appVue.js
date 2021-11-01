@@ -7,9 +7,33 @@ let app = new Vue({
         playsrcindex : 0,
         pw : "",
         isChekced : false,
-        message : ""
+        message : "",
+        speed : '1.0'
     },
     methods: {
+        setSpeeds : function(){
+            let audios = document.getElementsByTagName("audio")
+            for(let i = 0; i< audios.length; i++){
+                audios[i].playbackRate = Number(this.speed)
+            }
+        },
+        addSpeed : function(){
+            
+            if(Number(this.speed) < 2){
+                console.log(this.speed)
+                this.speed = String( Math.round( (Number(this.speed) + 0.1 ) * 10 )/10 )
+            }
+            this.setSpeeds()
+            
+        },
+        reduceSpeed : function(){
+            console.log(this.speed)
+            if(Number(this.speed) > 0.1){
+                this.speed = String(Math.round((Number(this.speed) - 0.1) * 10)/10)
+            }
+            
+            this.setSpeeds()
+        },
         setClass : function(index){
             let titles = document.getElementsByClassName("title")
             for(let i = 0; i < titles.length; i++){
@@ -32,7 +56,7 @@ let app = new Vue({
         checkPw : function(){
             if(this.pw == "system"){
                 this.isChekced = true;
-                setTimeout(loop(), 1000)
+                
             }
             else {
                 this.message = "wrong pw"
