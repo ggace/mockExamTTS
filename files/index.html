@@ -40,12 +40,12 @@
         <div id="app" class="m-2">
             
             <div v-if="isError">USE Android or IOS</div>
-            <div v-if="!isError && !isChekced">
+            <div v-if="!isChekced">
                 <input class="input input-bordered" v-model="pw" placeholder="pw를 입력해주세요">
                 <button class="btn btn-primary" v-on:click="checkPw">확인</button>
                 <div>{{message}}</div>
             </div>
-            <div v-if="!isError && isChekced">
+            <div v-if="isChekced">
                 <h1 style="display:flex; justify-content:center" class="text-xl">2020년 11월({{path}})</h1>
                 <div class="mt-2 mb-5 flex justify-around text-sm underline text-blue-500">
                     <button v-on:click="setPath('eng'); setClass(0)" class="title">영어</button>

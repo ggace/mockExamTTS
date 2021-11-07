@@ -15,7 +15,11 @@ let app = new Vue({
     },
     methods: {
         setAudio : function(){
-            this.playsrcindex = parseInt(document.getElementById("problemSelect").value)
+            let val = document.getElementById("problemSelect").value
+            if(val == "문제"){
+                val = "0"
+            }
+            this.playsrcindex = parseInt(val)
             let audio = document.getElementById("loop");
             if(!this.isAll){
                 if(this.isLoop){
