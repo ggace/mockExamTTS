@@ -39,7 +39,7 @@ let app = new Vue({
                     }
                 }
                 else{
-                    if(this.playsrcindex % problems.length != 0){
+                    if(this.playsrcindex % this.problems.length != 0){
                         audio.loop = false;
                         audio.onended = function(){
                             
