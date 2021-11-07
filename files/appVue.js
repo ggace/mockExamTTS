@@ -8,9 +8,59 @@ let app = new Vue({
         pw : "",
         isChekced : false,
         message : "",
-        speed : '1.0'
+        speed : '1.0',
+
+        isLoop : false,
+        isAll : false
     },
     methods: {
+        setAudio : function(){
+            this.playsrcindex = parseInt(document.getElementById("problemSelect").value)
+            let audio = document.getElementById("loop");
+            if(!this.isAll){
+                if(this.isLoop){
+                    audio.loop = true;
+                }
+                else{
+                    audio.loop = false;
+                }
+                
+            }
+            else{
+
+                if(this.isLoop){
+                    audio.loop = false;
+                    audio.onended = function(){
+                        
+                            app.playsrcindex += 1
+                            setTimeout(function(){audio.play();}, 1500);
+                        
+                        
+                    }
+                }
+                else{
+                    if(this.playsrcindex % problems.length != 0){
+                        audio.loop = false;
+                        audio.onended = function(){
+                            
+                                app.playsrcindex += 1
+                                setTimeout(function(){audio.play();}, 1500);
+                            
+                            
+                        }
+                    }
+                }
+                
+            }
+        },
+        changeIsAll : function(){
+            this.isAll = !this.isAll;
+            this.setAudio()
+        },
+        changeIsLoop : function(){
+            this.isLoop = !this.isLoop;
+            this.setAudio()
+        },
         setSpeeds : function(){
             let audios = document.getElementsByTagName("audio")
             for(let i = 0; i< audios.length; i++){
@@ -46,17 +96,18 @@ let app = new Vue({
             }
             
         },
-        loop : function(){
-            this.playsrcindex += 1;
-            
-            setTimeout(function(){document.getElementById("loop").play();}, 1500);
-        },
         setPath : function(path){
             this.path = path;
         },
         checkPw : function(){
             if(this.pw == "system"){
                 this.isChekced = true;
+                setTimeout(function(){
+                    document.getElementById("problemSelect").onchange = function(){
+                        app.playsrcindex = document.getElementById("problemSelect").value
+                    }
+                }, 1000)
+                
                 
             }
             else {
@@ -134,3 +185,4 @@ let app = new Vue({
         
     }
 });
+

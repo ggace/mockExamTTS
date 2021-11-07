@@ -40,12 +40,12 @@
         <div id="app" class="m-2">
             
             <div v-if="isError">USE Android or IOS</div>
-            <div v-if="!isError && !isChekced">
+            <div v-if="!isChekced">
                 <input class="input input-bordered" v-model="pw" placeholder="pw를 입력해주세요">
                 <button class="btn btn-primary" v-on:click="checkPw">확인</button>
                 <div>{{message}}</div>
             </div>
-            <div v-if="!isError && isChekced">
+            <div v-if="isChekced">
                 <h1 style="display:flex; justify-content:center" class="text-xl">2020년 11월({{path}})</h1>
                 <div class="mt-2 mb-5 flex justify-around text-sm underline text-blue-500">
                     <button v-on:click="setPath('eng'); setClass(0)" class="title">영어</button>
@@ -61,18 +61,30 @@
                         <a v-bind:href="'https://ggace.github.io/mockExamTTS/output/2020/' + path + '.zip'" class="inline text-blue-400 underline block text-sm">다운로드</a>
                         <div class="flex flex-grow"></div>
                         <div class="flex">
+                            <div id="problemTitle">
+                                <select name="problem" id="problemSelect" v-bind:autofocus="20">
+                                    <option disabled selected>문제</option>
+                                    <option v-for="problem in problems" v-bind:value="problems.indexOf(problem)">{{problem}}</option>
+                                </select>
+                            </div>
+                            <div id="loopTitle">
+                                <button v-if="isLoop" class="text-blue-500 font-bold mx-2" v-on:click="changeIsLoop()">loop</button>
+                                <button v-if="!isLoop" class="mx-2"                       v-on:click="changeIsLoop()">loop</button>
+                            </div>
+                            <div id="allTitle">
+                                <button v-if="isAll"  class="mx-2 text-purple-500" v-on:click="changeIsAll()">A</button>
+                                <button v-if="!isAll" class="mx-2 text-purple-500" v-on:click="changeIsAll()">1</button>
+                            </div>
+                            
+
                             <button @click="reduceSpeed()" class="btn btn-secondary btn-outline btn-sm">-</button>
                             <p id="speed" class="flex items-center">{{speed}}</p>
                             <button @click="addSpeed()" class="btn btn-secondary btn-outline btn-sm">+</button>
                         </div>
                     </div>
                     <div class="flex">
-                        <div class="flex items-center text-sm">반복</div>
-                        <audio controls id="loop" @ended="loop()" v-bind:src="'https://ggace.github.io/mockExamTTS/output/2020/' + path + '/2020_' + problems[playsrcindex % problems.length] + '_' + path + '.mp3'" class="m-5 w-7/12" ></audio>
-                    </div>
-                    <div v-for="problem in problems" class="flex">
-                        <div class="flex items-center text-sm">{{problem}}번</div>
-                        <audio loop controls v-bind:src="'https://ggace.github.io/mockExamTTS/output/2020/' + path + '/2020_' + problem + '_' + path + '.mp3'" class="m-5 w-7/12"/>
+                        <div class="flex items-center text-sm">{{problems[playsrcindex % problems.length]}} 번</div>
+                        <audio @change="setAudio()" controls id="loop" v-bind:src="'https://ggace.github.io/mockExamTTS/output/2020/' + path + '/2020_' + problems[playsrcindex % problems.length] + '_' + path + '.mp3'" class="m-5 w-7/12" ></audio>
                     </div>
 
                     
