@@ -46,7 +46,7 @@
                 <div>{{message}}</div>
             </div>
             <div v-if="!isError && isChekced">
-                <h1 style="display:flex; justify-content:center" class="text-xl">2020년 11월({{path}})</h1>
+                <h1 style="display:flex; justify-content:center" class="text-xl">{{year}}년 11월({{path}})</h1>
                 <div class="mt-2 mb-5 flex justify-around text-sm underline text-blue-500">
                     <button v-on:click="setPath('eng'); setClass(0)" class="title">영어</button>
                     <button v-on:click="setPath('kor_eng'); setClass(1)" class="title">한글/영어</button>
@@ -58,9 +58,10 @@
                 <hr>
                 <div class="flex flex-col">
                     <div class="flex">
-                        <a v-bind:href="'https://ggace.github.io/mockExamTTS/output/2020/' + path + '.zip'" class="inline text-blue-400 underline block text-sm">다운로드</a>
+                        <a v-bind:href="'https://ggace.github.io/mockExamTTS/output/' + year + '/' + path + '.zip'" class="inline text-blue-400 underline block text-sm">다운로드</a>
                         <div class="flex flex-grow"></div>
                         <div class="flex">
+                            
                             <div id="problemTitle">
                                 <select name="problem" id="problemSelect" v-bind:autofocus="20">
                                     <option disabled selected>문제</option>
@@ -84,10 +85,15 @@
                     </div>
                     <div class="flex">
                         <div class="flex items-center text-sm">{{problems[playsrcindex % problems.length]}} 번</div>
-                        <audio @change="setAudio()" controls id="loop" v-bind:src="'https://ggace.github.io/mockExamTTS/output/2020/' + path + '/2020_' + problems[playsrcindex % problems.length] + '_' + path + '.mp3'" class="m-5 w-7/12" ></audio>
+                        <audio @change="setAudio()" controls id="loop" v-bind:src="'https://ggace.github.io/mockExamTTS/output/' + year + '/' + path + '/2020_' + problems[playsrcindex % problems.length] + '_' + path + '.mp3'" class="m-5 w-7/12" ></audio>
                     </div>
 
-                    
+                    <div class="h-40"></div>
+
+                    <div>
+                        <button class="btn btn-sm btn-outline mx-2" @click="changeYear(2019)">2019</buton>
+                        <button class="btn btn-sm btn-outline mx-2" @click="changeYear(2020)">2020</buton>
+                    </div>
 
                     
 

@@ -1,7 +1,7 @@
 !function() {
     function detectDevTool(allow) {
     if(isNaN(+allow)) allow = 100;
-    app = undefined;
+    //app = undefined;
 }
 if(window.attachEvent) {
     if (document.readyState === "complete" || document.readyState === "interactive") {

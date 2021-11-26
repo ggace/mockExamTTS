@@ -9,7 +9,7 @@ let app = new Vue({
         isChekced : false,
         message : "",
         speed : '1.0',
-
+        year : 2020,
         isLoop : false,
         isAll : false
     },
@@ -57,13 +57,86 @@ let app = new Vue({
                 
             }
         },
+        changeYear : function(year){
+            this.year = year;
+        },
         changeIsAll : function(){
+            let audio = document.getElementById("loop");
             this.isAll = !this.isAll;
-            this.setAudio()
+            if(!this.isAll){
+                if(this.isLoop){
+                    audio.loop = true;
+                }
+                else{
+                    audio.loop = false;
+                }
+                
+            }
+            else{
+
+                if(this.isLoop){
+                    audio.loop = false;
+                    audio.onended = function(){
+                        
+                            app.playsrcindex += 1
+                            setTimeout(function(){audio.play();}, 1500);
+                        
+                        
+                    }
+                }
+                else{
+                    if(this.playsrcindex % this.problems.length != 0){
+                        audio.loop = false;
+                        audio.onended = function(){
+                            
+                                app.playsrcindex += 1
+                                setTimeout(function(){audio.play();}, 1500);
+                            
+                            
+                        }
+                    }
+                }
+                
+            }
         },
         changeIsLoop : function(){
+            let audio = document.getElementById("loop");
             this.isLoop = !this.isLoop;
-            this.setAudio()
+            if(!this.isAll){
+                if(this.isLoop){
+                    audio.loop = true;
+                }
+                else{
+                    audio.loop = false;
+                }
+                
+            }
+            else{
+
+                if(this.isLoop){
+                    audio.loop = false;
+                    audio.onended = function(){
+                        
+                            app.playsrcindex += 1
+                            setTimeout(function(){audio.play();}, 1500);
+                        
+                        
+                    }
+                }
+                else{
+                    if(this.playsrcindex % this.problems.length != 0){
+                        audio.loop = false;
+                        audio.onended = function(){
+                            
+                                app.playsrcindex += 1
+                                setTimeout(function(){audio.play();}, 1500);
+                            
+                            
+                        }
+                    }
+                }
+                
+            }
         },
         setSpeeds : function(){
             let audios = document.getElementsByTagName("audio")
