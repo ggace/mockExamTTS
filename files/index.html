@@ -85,7 +85,7 @@
                     </div>
                     <div class="flex">
                         <div class="flex items-center text-sm">{{problems[playsrcindex % problems.length]}} 번</div>
-                        <audio @change="setAudio()" controls id="loop" v-bind:src="'https://ggace.github.io/mockExamTTS/output/' + year + '/' + path + '/2020_' + problems[playsrcindex % problems.length] + '_' + path + '.mp3'" class="m-5 w-7/12" ></audio>
+                        <audio @change="setAudio()" controls id="loop" v-bind:src="'https://ggace.github.io/mockExamTTS/output/' + year + '/' + path + '/' + year + '_' + problems[playsrcindex % problems.length] + '_' + path + '.mp3'" class="m-5 w-7/12" ></audio>
                     </div>
 
                     <div class="h-40"></div>
