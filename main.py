@@ -1,17 +1,27 @@
 from gtts import gTTS
 import json
 
-years = [2019]
+years = [2021]
 
 isSpeakTopic = True;
 isSpeakEng = True;
-isSpeakKor = True;
+isSpeakKor = False;
+
+tags = []
+
+if(isSpeakTopic):
+    tags.append("topic")
+if(isSpeakKor):
+    tags.append("kor")
+if(isSpeakEng):
+    tags.append("eng")
+
 
 for year in years:
     basicPath = rf"sources\{year}"
     resultPath = rf"output\{year}"
 
-    problems = list(range(29, 42)) + [43]
+    problems = [29, 30, 31, 32, 33]
     
     
     for problem in problems:
@@ -38,14 +48,9 @@ for year in years:
                 tts_contents.append(gTTS(text=c["kor"], lang='ko'))
         
         
-        fileName = rf"{resultPath}\{year}_{problem}"
-
-        if(isSpeakTopic):
-            fileName += "_topic"
-        if(isSpeakKor):
-            fileName += "_kor"
-        if(isSpeakEng):
-            fileName += "_eng"
+        fileName = rf"{resultPath}\{'_'.join(tags)}\{year}_{problem}"
+        if(tags != ""):
+            fileName += "_" + "_".join(tags)
         fileName += ".mp3"
 
         f = open(fileName,'wb') 

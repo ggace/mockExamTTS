@@ -1,28 +1,18 @@
-string = """A long time ago, a farmer in a small town had a neighbor who was a hunter. 
-The hunter owned a few fierce and poorly-trained hunting dogs. 
-They jumped the fence frequently and chased the farmer’s lambs. 
-The farmer asked his neighbor to keep his dogs in check, but his words fell on deaf ears. 
-One day when the dogs jumped the fence, they attacked and severely injured several of the lambs. 
-The farmer had had enough by this point. 
-He went to the nearest city to consult a judge. 
-After listening carefully to his story, the judge said, “I could punish the hunter and instruct him to keep his dogs chained or lock them up. But you would lose a friend and gain an enemy. Which would you rather have for a neighbor, a friend or an enemy?”
-The farmer replied that he preferred a friend. 
-“All right, I will offer you a solution that keeps your lambs safe and will also turn your neighbor into a good friend.” 
-Having heard the judge’s solution, the farmer agreed. 
-As soon as the farmer reached home, he immediately put the judge’s suggestions to the test.
-He selected three of the cutest lambs from his farm. 
-He then presented them to his neighbor’s three small sons. 
-The children accepted with joy and began to play with them. 
-To protect his sons’ newly acquired playmates, the hunter built a strong doghouse for his dogs. 
-The dogs never bothered the farmer’s lambs again. 
-Out of gratitude for the farmer’s generosity toward his children, the hunter often invited the farmer for feasts. 
-In turn, the farmer offered him lamb meat and cheese he had made. 
-The farmer quickly developed a strong friendship with him."""
+string = """Psychological research has shown that people naturally divide up cognitive labor, often without thinking about it.
+Imagine you’re cooking up a special dinner with a friend.
+You’re a great cook, but your friend is the wine expert, an amateur sommelier.
+A neighbor drops by and starts telling you both about the terrific new wines being sold at the liquor store just down the street.
+There are many new wines, so there’s a lot to remember.
+How hard are you going to try to remember what the neighbor has to say about which wines to buy?
+Why bother when the information would be better retained by the wine expert sitting next to you?
+If your friend wasn’t around, you might try harder.
+After all, it would be good to know what a good wine would be for the evening’s festivities.
+But your friend, the wine expert, is likely to remember the information without even trying."""
 
 import json
 
-basicPath = r"sources\2019"
-problem = 43
+basicPath = r"sources\2021"
+problem = 33
 
 string = string.strip()
 stringPart = string.split("\n")
