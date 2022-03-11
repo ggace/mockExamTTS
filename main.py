@@ -5,7 +5,7 @@ years = [2021]
 
 isSpeakTopic = True;
 isSpeakEng = True;
-isSpeakKor = False;
+isSpeakKor = True;
 
 tags = []
 
