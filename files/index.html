@@ -1,116 +1,16 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        
+        <title>영어 모의고사 문제 듣기</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.7/tailwind.min.css" />
-        <link href="https://cdn.jsdelivr.net/npm/daisyui@1.16.0/dist/full.css" rel="stylesheet" type="text/css" />
-        <script
-  src="https://code.jquery.com/jquery-3.6.0.js"
-  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-  crossorigin="anonymous"></script>
-        <script>
-            function getAndroidDevName() {
-                var uaAdata = navigator.userAgent;
-                var regex = /Android (.*);.*;\s*(.*)\sBuild/;
-                var match = regex.exec(uaAdata);
-                if (match) {
-                    var ver = match[1];
-                    var dev_name = match[2];
-                    return "Android " + ver + " " + dev_name;
-                }
-                return "Android OS";
-            }
-        </script>
     </head>
-    <body oncontextmenu='return false' class="container mx-auto mt-5" onselectstart='return false' ondragstart='return false'>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
-        <div id="app" class="m-2">
-            
-            <div v-if="isError">USE Android or IOS</div>
-            <div v-if="!isError && !isChekced">
-                <input class="input input-bordered" v-model="pw" placeholder="pw를 입력해주세요">
-                <button class="btn btn-primary" v-on:click="checkPw">확인</button>
-                <div>{{message}}</div>
-            </div>
-            <div v-if="!isError && isChekced">
-                <h1 style="display:flex; justify-content:center" class="text-xl">{{year}}년 11월({{path}})</h1>
-                <div class="mt-2 mb-5 flex justify-around text-sm underline text-blue-500">
-                    <button v-on:click="setPath('eng'); setClass(0)" class="title">영어</button>
-                    <button v-on:click="setPath('kor_eng'); setClass(1)" class="title">한글/영어</button>
-                    <button v-on:click="setPath('topic_eng'); setClass(2)" class="title">주제/영어</button>
-                    <button v-on:click="setPath('topic_kor'); setClass(3)" class="title">주제/한글</button>
-                    <button v-on:click="setPath('topic_kor_eng'); setClass(4)" class="title text-purple-500 font-bold text-base">주제/영어/한글</button>
-                </div>
-
-                <hr>
-                <div class="flex flex-col">
-                    <div class="flex">
-                        <a v-bind:href="'https://ggace.github.io/mockExamTTS/output/' + year + '/' + path + '.zip'" class="inline text-blue-400 underline block text-sm">다운로드</a>
-                        <div class="flex flex-grow"></div>
-                        <div class="flex">
-                            
-                            <div id="problemTitle">
-                                <select name="problem" id="problemSelect" v-bind:autofocus="20">
-                                    <option disabled selected>문제</option>
-                                    <option v-for="problem in problems" v-bind:value="problems.indexOf(problem)">{{problem}}</option>
-                                </select>
-                            </div>
-                            <div id="loopTitle">
-                                <button v-if="isLoop" class="text-blue-500 font-bold mx-2" v-on:click="changeIsLoop()">loop</button>
-                                <button v-if="!isLoop" class="mx-2"                       v-on:click="changeIsLoop()">loop</button>
-                            </div>
-                            <div id="allTitle">
-                                <button v-if="isAll"  class="mx-2 text-purple-500" v-on:click="changeIsAll()">A</button>
-                                <button v-if="!isAll" class="mx-2 text-purple-500" v-on:click="changeIsAll()">1</button>
-                            </div>
-                            
-
-                            <button @click="reduceSpeed()" class="btn btn-secondary btn-outline btn-sm">-</button>
-                            <p id="speed" class="flex items-center">{{speed}}</p>
-                            <button @click="addSpeed()" class="btn btn-secondary btn-outline btn-sm">+</button>
-                        </div>
-                    </div>
-                    <div class="flex">
-                        <div class="flex items-center text-sm">{{problems[playsrcindex % problems.length]}} 번</div>
-                        <audio @change="setAudio()" controls id="loop" v-bind:src="'https://ggace.github.io/mockExamTTS/output/' + year + '/' + path + '/' + year + '_' + problems[playsrcindex % problems.length] + '_' + path + '.mp3'" class="m-5 w-7/12" ></audio>
-                    </div>
-
-                    <div class="h-40"></div>
-
-                    <div>
-                        <button class="btn btn-sm btn-outline mx-2" @click="changeYear(2019)">2019</buton>
-                        <button class="btn btn-sm btn-outline mx-2" @click="changeYear(2020)">2020</buton>
-                        <button class="btn btn-sm btn-outline mx-2" @click="changeYear(2021)">2021</buton>
-                    </div>
-
-                    
-
-                </div>
-            </div>
-        </div>
-        
-
-        
-        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-        <script defer="defer" src="appVue.js"></script>
+    <body>
         
         
-
-        <script src="index.js" defer="defer"></script>
-        
-        
+        <script src="" async defer></script>
     </body>
 </html>

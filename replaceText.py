@@ -1,18 +1,15 @@
-string = """Psychological research has shown that people naturally divide up cognitive labor, often without thinking about it.
-Imagine you’re cooking up a special dinner with a friend.
-You’re a great cook, but your friend is the wine expert, an amateur sommelier.
-A neighbor drops by and starts telling you both about the terrific new wines being sold at the liquor store just down the street.
-There are many new wines, so there’s a lot to remember.
-How hard are you going to try to remember what the neighbor has to say about which wines to buy?
-Why bother when the information would be better retained by the wine expert sitting next to you?
-If your friend wasn’t around, you might try harder.
-After all, it would be good to know what a good wine would be for the evening’s festivities.
-But your friend, the wine expert, is likely to remember the information without even trying."""
+string = """At the University of Iowa, students were briefly shown numbers that they had to memorize.
+Then they were offered the choice of either a fruit salad or a chocolate cake.
+When the number the students memorized was seven digits long, 63% of them chose the cake.
+When the number they were asked to remember had just two digits, however, 59% opted for the fruit salad.
+Our reflective brains know that the fruit salad is better for our health, but our reflexive brains desire that soft, fattening chocolate cake.
+If the reflective brain is busy figuring something else out ― like trying to remember a seven­digit number ― then impulse can easily win.
+On  the  other  hand,  if  we’re  not  thinking  too  hard  about  something  else  (with  only  a  minor distraction like memorizing two digits), then the reflective system can deny the emotional impulse of the reflexive side."""
 
 import json
 
 basicPath = r"sources\2021"
-problem = 33
+problem = 40
 
 string = string.strip()
 stringPart = string.split("\n")

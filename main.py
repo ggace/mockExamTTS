@@ -5,7 +5,7 @@ years = [2021]
 
 isSpeakTopic = True;
 isSpeakEng = True;
-isSpeakKor = True;
+isSpeakKor = False;
 
 tags = []
 
@@ -21,7 +21,7 @@ for year in years:
     basicPath = rf"sources\{year}"
     resultPath = rf"output\{year}"
 
-    problems = [29, 30, 31, 32, 33]
+    problems = [29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40]
     
     
     for problem in problems:
@@ -32,6 +32,7 @@ for year in years:
             json_data = json.load(f)
         content = json_data["content"]
         topic = json_data["topic"]
+        topicEng = json_data["topicEng"]
         
         
         tts_number = gTTS(text=f"{year}년 {problem}번", lang='ko')
@@ -39,8 +40,13 @@ for year in years:
         
         if(topic != "" and isSpeakTopic):
             tts_topic = gTTS(text=f"주제 : {topic}", lang='ko')
+            tts_topicEng = gTTS(text=f"{topicEng}", lang='en')
 
+        
         tts_contents = []
+        
+        if(isSpeakEng or isSpeakKor):
+            tts_contents.append(gTTS(text=f"내용 : ", lang='ko'))
         for c in content:
             if(isSpeakEng):
                 tts_contents.append(gTTS(text=c["eng"], lang='en'))
@@ -57,6 +63,7 @@ for year in years:
         tts_number.write_to_fp(f)
         if(topic != "" and isSpeakTopic):
             tts_topic.write_to_fp(f)
+            tts_topicEng.write_to_fp(f)
         for tts_content in tts_contents:
             tts_content.write_to_fp(f)
         f.close()
