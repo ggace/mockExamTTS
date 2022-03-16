@@ -1,0 +1,26 @@
+.headerType:hover {
+    text-decoration: underline;
+}
+
+.headerType {
+    border: 0;
+    background-color: white
+}
+
+
+
+#selectedType {
+    font-size: '30px'
+}
+
+#audio, #controller {
+    
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+    width: 80vw
+}
+
+#flex-grow{
+    right: 0
+}

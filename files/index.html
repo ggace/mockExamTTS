@@ -7,10 +7,41 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
+        <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!--<script src="index.js"></script>-->
+        
+        <script type="text/babel" src="header.js"></script>
+        <script type="text/babel" src="audio.js"></script>
+        <script type="text/babel" src="control.js"></script>
+        <script type="text/javascript" src="setting.js"></script>
+
+        <link href="index.css" rel="stylesheet">
     </head>
     <body>
+        <div id="root"></div>
         
-        
-        <script src="" async defer></script>
+        <script type="text/babel" async defer>
+            let years = []
+            let problemOfYear = []
+            fetch("https://ggace.github.io/mockExamTTS/sources/configure.json")
+            .then((res)=>res.json())
+            .then((result)=>{
+                let years = result.years
+                let problemOfYear = result.problems
+                
+                let elements = (<div>
+                    <Header year={years[setting.yearIndex]} types={['eng', 'kor_eng', 'topic_eng', 'topic_kor', 'topic_kor_eng']} problems={problemOfYear[years[setting.yearIndex]]} type={setting.type}></Header>
+                    <Controller year={years[setting.yearIndex]} problems={problemOfYear[years[setting.yearIndex]]} type={setting.type}></Controller>
+                    <Audio year={years[setting.yearIndex]} problems={problemOfYear[years[setting.yearIndex]]} problem={problemOfYear[years[setting.yearIndex]][setting.problemIndex]} type={setting.type}></Audio>
+                </div>)
+
+                ReactDOM.render(elements, document.getElementById('root')); 
+
+            })
+
+        </script>
     </body>
 </html>
