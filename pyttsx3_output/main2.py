@@ -7,10 +7,10 @@ from pydub import AudioSegment
 engine = pyttsx3.init()
 
 voices = engine.getProperty('voices')
-engine.setProperty('rate', 150)
+engine.setProperty('rate', 140)
 
 korVoiceIndex = 0
-EngVoiceIndex = 2
+EngVoiceIndex = 1
 
 for voice in voices:
     print("Voice: %s" % voice.name)
@@ -19,12 +19,13 @@ for voice in voices:
     print(" - Gender: %s" % voice.gender)
     print(" - Age: %s" % voice.age)
     print("\n")
+    
 
 years = [2021]
 
-isSpeakTopic = True;
+isSpeakTopic = False;
 isSpeakEng = True;
-isSpeakKor = True;
+isSpeakKor = False;
 
 tags = []
 
@@ -35,6 +36,9 @@ if(isSpeakKor):
 if(isSpeakEng):
     tags.append("eng")
 
+problems = [29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40]
+
+problemIndex = 0
 
 for year in years:
     tempPath = rf"temps"
@@ -43,8 +47,8 @@ for year in years:
 
     
     
+    problems = [problems[problemIndex]]
     
-    problems = [29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40]
     
     
     for problem in problems:

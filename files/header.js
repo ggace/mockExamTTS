@@ -27,6 +27,7 @@ class Header extends React.Component {
                 headerButtons[i].style.fontSize = "20px"
                 headerButtons[i].style.color = "purple"
                 setting.type = headerButtons[i].innerText
+                document.cookie = "type=" + headerButtons[i].innerText
                 document.getElementById("audio").src= "https://ggace.github.io/mockExamTTS/output/" + this.props.year + "/" + setting.type + "/" + this.props.year + "_" + this.props.problems[setting.problemIndex] + "_" + setting.type + ".mp3";
             }
             else{
