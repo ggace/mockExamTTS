@@ -9,9 +9,9 @@ class Controller extends React.Component {
             return <option value={problem}>{problem}</option>
         });
 
-        return (<div class="flex" id="controller">
+        return (<div className="flex" id="controller">
                             
-                <select name="problem" id="problemSelect" autofocus="20" onChange={this.problemChange.bind(this)}>
+                <select name="problem" id="problemSelect" autoFocus="20" onChange={this.problemChange.bind(this)}>
                     <option disabled selected>문제</option>
                     {element}
                 </select>
