@@ -3,7 +3,7 @@ import json
 
 years = [2021]
 
-isSpeakTopic = True;
+isSpeakTopic = False;
 isSpeakEng = True;
 isSpeakKor = False;
 
@@ -21,7 +21,7 @@ for year in years:
     basicPath = rf"sources\{year}"
     resultPath = rf"output\{year}"
 
-    problems = [29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40]
+    problems = [21,23,24]
     
     
     for problem in problems:

@@ -22,15 +22,16 @@
     </head>
     <body>
         <div id="root"></div>
-        
+        <div id="content"></div>
         <script type="text/babel" async defer>
             let years = []
             let problemOfYear = []
+
             fetch("https://ggace.github.io/mockExamTTS/sources/configure.json")
             .then((res)=>res.json())
             .then((result)=>{
-                let years = result.years
-                let problemOfYear = result.problems
+                years = result.years
+                problemOfYear = result.problems
                 
                 let elements = (<div>
                     <Header year={years[setting.yearIndex]} types={['eng', 'kor_eng', 'topic_eng', 'topic_kor', 'topic_kor_eng']} problems={problemOfYear[years[setting.yearIndex]]} type={setting.type}></Header>
@@ -41,7 +42,26 @@
                 ReactDOM.render(elements, document.getElementById('root')); 
 
             })
+            .then(() => {
+                changeContent()
+            })
 
+            function changeContent(){
+                fetch("https://ggace.github.io/mockExamTTS/sources/" + years[setting.yearIndex]+ "/" + problemOfYear[years[setting.yearIndex]][setting.problemIndex] + ".json")
+                .then((res)=>res.json())
+                .then((result)=>{
+                    let elements = result.content.map((content)=> {
+                        return (
+                            <div>
+                                <p style={{"fontSize":"20px"}}>{content.eng}</p>
+                                <p>{content.kor}</p>
+                            </div>
+                        )
+                    })
+
+                    ReactDOM.render(<div>{elements}</div>, document.getElementById('content')); 
+                })
+            }
         </script>
     </body>
 </html>

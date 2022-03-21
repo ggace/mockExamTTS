@@ -14,7 +14,7 @@ class Header extends React.Component {
         })
 
         return (<div>
-            <h1 style={{textAlign: 'center'}}>{this.props.year}년 11월</h1>
+            <h1 style={{textAlign: 'center'}}>{this.props.year}년 3월</h1>
             <div style={{display: "flex", justifyContent: "space-around"}}>{elements}</div>
         </div>)
     }

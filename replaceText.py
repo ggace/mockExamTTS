@@ -1,15 +1,15 @@
-string = """At the University of Iowa, students were briefly shown numbers that they had to memorize.
-Then they were offered the choice of either a fruit salad or a chocolate cake.
-When the number the students memorized was seven digits long, 63% of them chose the cake.
-When the number they were asked to remember had just two digits, however, 59% opted for the fruit salad.
-Our reflective brains know that the fruit salad is better for our health, but our reflexive brains desire that soft, fattening chocolate cake.
-If the reflective brain is busy figuring something else out ― like trying to remember a seven­digit number ― then impulse can easily win.
-On  the  other  hand,  if  we’re  not  thinking  too  hard  about  something  else  (with  only  a  minor distraction like memorizing two digits), then the reflective system can deny the emotional impulse of the reflexive side."""
+string = """Some beginning researchers mistakenly believe that a good hypothesis is one that is guaranteed to be right (e.g., alcohol will slow down reaction time).
+However, if we already know your hypothesis is true before you test  it,  testing your hypothesis won’t tell us anything new.
+Remember, research is supposed to produce new knowledge.
+To get new knowledge, you, as a researcher­explorer, need to leave the safety of the shore (established facts) and venture into uncharted waters (as Einstein said, “If we knew what we were doing, it would not be called research, would it?”).
+If your predictions about what will happen in these uncharted waters are wrong, that’s okay:
+Scientists are allowed to make mistakes (as Bates said, “Research is the process of going up alleys to see if they are blind”).
+Indeed, scientists often learn more from predictions that do not turn out than from those that do."""
 
 import json
 
 basicPath = r"sources\2021"
-problem = 40
+problem = 24
 
 string = string.strip()
 stringPart = string.split("\n")

@@ -27,7 +27,8 @@ class Controller extends React.Component {
 
     problemChange(){
         setting.problemIndex = (document.getElementById("problemSelect").selectedIndex-1)% this.props.problems.length;
-        document.getElementById("audio").src= "https://ggace.github.io/mockExamTTS/output/" + this.props.year + "/" + this.props.type + "/" + this.props.year + "_" + this.props.problems[setting.problemIndex] + "_" + this.props.type + ".mp3";
+        document.getElementById("audio").src= "https://ggace.github.io/mockExamTTS/output/" + this.props.year + "/" + setting.type + "/" + this.props.year + "_" + this.props.problems[setting.problemIndex] + "_" + this.props.type + ".mp3";
+        changeContent();
     }
 
     showingtypeChange(){
