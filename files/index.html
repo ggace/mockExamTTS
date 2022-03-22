@@ -11,7 +11,7 @@
         <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
         <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <!--<script src="index.js"></script>-->
+        <script src="index.js"></script>
         
         <script type="text/babel" src="header.js"></script>
         <script type="text/babel" src="audio.js"></script>
@@ -50,16 +50,23 @@
                 fetch("https://ggace.github.io/mockExamTTS/sources/" + years[setting.yearIndex]+ "/" + problemOfYear[years[setting.yearIndex]][setting.problemIndex] + ".json")
                 .then((res)=>res.json())
                 .then((result)=>{
+                    
+                    let head = <h3>{problemOfYear[years[setting.yearIndex]][setting.problemIndex]}번</h3>
+                    let topic = (<div>
+                        <p style={{"fontSize":"20px"}}>topic : {result.topic}({result.topicEng})</p>
+                        <br />
+                    </div>)
                     let elements = result.content.map((content)=> {
                         return (
                             <div>
+                                
                                 <p style={{"fontSize":"20px"}}>{content.eng}</p>
                                 <p>{content.kor}</p>
                             </div>
                         )
                     })
 
-                    ReactDOM.render(<div>{elements}</div>, document.getElementById('content')); 
+                    ReactDOM.render(<div>{head}{topic}{elements}</div>, document.getElementById('content')); 
                 })
             }
         </script>
