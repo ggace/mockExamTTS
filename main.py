@@ -5,7 +5,7 @@ years = [2021]
 
 isSpeakTopic = True;
 isSpeakEng = True;
-isSpeakKor = True;
+isSpeakKor = False;
 
 tags = []
 
@@ -21,7 +21,7 @@ for year in years:
     basicPath = rf"sources\{year}"
     resultPath = rf"output\{year}"
 
-    problems = [30]
+    problems = [21,23,37,38,39]
     
     
     for problem in problems:
