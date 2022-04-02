@@ -14,7 +14,7 @@ if(document.cookie != null){
 
 var setting = {
     type: cookie['type']!=null&& cookie['type']!=""?cookie['type']:"topic_kor_eng",
-    yearIndex: 0,
+    yearIndex: cookie['yearIndex']!=null&& cookie['yearIndex']!=""?cookie['yearIndex']:0,
     problemIndex: cookie['problemIndex']!=null&& cookie['problemIndex']!=""?cookie['problemIndex']:0,
     showingTypeIndex: 0,
     speed: 1.0

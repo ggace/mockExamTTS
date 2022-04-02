@@ -9,8 +9,16 @@ class Controller extends React.Component {
             return <option value={problem}>{problem}</option>
         });
 
+        let yearsElement = this.props.years.map((year)=> {           
+            return <option value={year}>{year}</option>
+        })
+
         return (<div className="flex" id="controller">
-                            
+                <select name="year" id="yearSelect" autoFocus="20" onChange={this.yearChange.bind(this)}>
+                    <option disabled selected>연도</option>
+                    {yearsElement}
+                </select>
+
                 <select name="problem" id="problemSelect" autoFocus="20" onChange={this.problemChange.bind(this)}>
                     <option disabled selected>문제</option>
                     {element}
@@ -25,9 +33,16 @@ class Controller extends React.Component {
         </div>)
     }
 
+    yearChange(){
+        setting.yearIndex = (document.getElementById("yearSelect").selectedIndex-1)% this.props.problems.length;
+        document.getElementById("audio").src= "https://ggace.github.io/mockExamTTS/output/" + years[setting.yearIndex] + "/" + setting.type + "/" + years[setting.yearIndex] + "_" + this.props.problems[setting.problemIndex] + "_" + this.props.type + ".mp3";
+        document.cookie = "yearIndex=" + setting.yearIndex
+        changeContent();
+    }
+
     problemChange(){
         setting.problemIndex = (document.getElementById("problemSelect").selectedIndex-1)% this.props.problems.length;
-        document.getElementById("audio").src= "https://ggace.github.io/mockExamTTS/output/" + this.props.year + "/" + setting.type + "/" + this.props.year + "_" + this.props.problems[setting.problemIndex] + "_" + this.props.type + ".mp3";
+        document.getElementById("audio").src= "https://ggace.github.io/mockExamTTS/output/" + years[setting.yearIndex] + "/" + setting.type + "/" + years[setting.yearIndex] + "_" + this.props.problems[setting.problemIndex] + "_" + this.props.type + ".mp3";
         document.cookie = "problemIndex=" + setting.problemIndex
         changeContent();
     }

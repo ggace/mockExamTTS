@@ -28,15 +28,16 @@
             let years = []
             let problemOfYear = []
 
-            fetch("https://ggace.github.io/mockExamTTS/sources/configure.json")
+            fetch("../sources/configure.json")
             .then((res)=>res.json())
             .then((result)=>{
+                console.log(result)
                 years = result.years
                 problemOfYear = result.problems
                 
                 let elements = (<div>
                     <Header year={years[setting.yearIndex]} types={['eng', 'kor_eng', 'topic_eng', 'topic_kor', 'topic_kor_eng']} problems={problemOfYear[years[setting.yearIndex]]} type={setting.type}></Header>
-                    <Controller year={years[setting.yearIndex]} problems={problemOfYear[years[setting.yearIndex]]} type={setting.type}></Controller>
+                    <Controller years={years} year={years[setting.yearIndex]} problems={problemOfYear[years[setting.yearIndex]]} type={setting.type}></Controller>
                     <Audio year={years[setting.yearIndex]} problems={problemOfYear[years[setting.yearIndex]]} problem={problemOfYear[years[setting.yearIndex]][setting.problemIndex]} type={setting.type}></Audio>
                 </div>)
 

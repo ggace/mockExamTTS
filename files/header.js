@@ -14,7 +14,7 @@ class Header extends React.Component {
         })
 
         return (<div>
-            <h1 style={{textAlign: 'center'}}>{this.props.year}년 3월</h1>
+            <h1 style={{textAlign: 'center'}}>2022 2학년 1학기 중간고사</h1>
             <div style={{display: "flex", justifyContent: "space-around"}}>{elements}</div>
         </div>)
     }
@@ -28,7 +28,7 @@ class Header extends React.Component {
                 headerButtons[i].style.color = "purple"
                 setting.type = headerButtons[i].innerText
                 document.cookie = "type=" + headerButtons[i].innerText
-                document.getElementById("audio").src= "https://ggace.github.io/mockExamTTS/output/" + this.props.year + "/" + setting.type + "/" + this.props.year + "_" + this.props.problems[setting.problemIndex] + "_" + setting.type + ".mp3";
+                document.getElementById("audio").src= "https://ggace.github.io/mockExamTTS/output/" + years[setting.yearIndex] + "/" + setting.type + "/" + years[setting.yearIndex] + "_" + this.props.problems[setting.problemIndex] + "_" + setting.type + ".mp3";
             }
             else{
                 headerButtons[i].style.fontSize = "15px"
