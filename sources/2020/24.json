@@ -1,0 +1,33 @@
+{
+    "topic" : "식품 라벨에 숨겨진 설탕의 진실", 
+    "topicEng": "Truth about sugar hidden in food labels",
+    "content" : [{
+        "eng": "If a food contains more sugar than any other ingredient, government regulations require that sugar be listed first on the label. .",
+        "kor": "한 식품이 다른 어떤 성분보다 설탕을 더 많이 함유하고 있다면, 정부 규정은 설탕이 라벨에 첫 번째로 기재될 것을 요구한다. "
+    },
+    {
+        "eng": "But if a food contains several different kinds of sweeteners, they can be listed separately, which pushes each one farther down the list.",
+        "kor": "그러나 어떤 식품이 몇 가지 다른 종류의 감미료를 함유하고 있다면, 그것들은 각각 기재될 수 있는데, 그것은 각각의 감미료를 목록에서 더 아래로 밀어 내린다. "
+    },
+    {
+        "eng": "This requirement has led the food industry to put in three different sources of sugar so that they don't have to say // the food has that much sugar.",
+        "kor": "이 요구는 식품업계가 그 식품에 설탕이 그렇게 많이 들어 있다고 말할 필요가 없도록 세 가지 다른 당의 원료를 넣게 만들었다. "
+    },
+    {
+        "eng": "So sugar doesn't appear first.",
+        "kor": "그래서 설탕이 첫 번째로 나타나지 않는다. "
+    },
+    {
+        "eng": "Whatever the true motive, ingredient labeling still does not fully convey the amount of sugar being added to food, certainly not in a language that is easy for consumers to understand.",
+        "kor": "진짜 동기가 무엇이든, 성분 라벨 표기는 식품에 첨가되는 설탕의 양을 여전히 충분히 전달하지 못하고 있으며, 분명히 소비자가 이해하기 쉬운 언어로 되어있지 않다. "
+    },
+    {
+        "eng": "A world\u00adfamous cereal brand's label, for example, indicates that the cereal has 11 grams of sugar per serving.",
+        "kor": "예를들어, 세계적으로 유명한 어떤 시리얼 브랜드의 라벨은 시리얼이 1회분에 11g의 설탕을 함유하고 있음을 보여준다. "
+    },
+    {
+        "eng": "But nowhere does it tell consumers that more than one\u00adthird of the box contains added sugar.",
+        "kor": "그러나 라벨의 어디에서도 상자의 3분의 1넘게 첨가당을 함유하고 있다는 것을 소비자들에게 알려주지 않는다."
+    }
+]
+}

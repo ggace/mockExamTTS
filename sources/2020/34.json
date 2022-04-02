@@ -1,0 +1,37 @@
+{
+    "topic" : "음식이 유전자 발현에 미치는 영향", 
+    "topicEng": "Immediate effect of food on gene expression",
+    "content" : [{
+        "eng": "The growing field of genetics is showing us what many scientists have suspected for years foods can immediately influence the genetic blueprint. ",
+        "kor": "성장하고 있는 유전학 분야는 많은 과학자가 여러해 동안 의구심을 가져왔던 것, 즉 식품이 유전자 청사진에 직접 영향을 줄 수 있다는 것을 우리에게 보여 주고 있다. "
+    },
+    {
+        "eng": "This information helps us better understand that genes are under our control and not something we must obey. ",
+        "kor": "이 정보는 유전자가 우리의 통제 하에 있는 것이지 우리가 복종해야 하는 것이 아니라는 것을 더 잘 이해하도록 도와준다. "
+    },
+    {
+        "eng": "Consider identical twins; both individuals are given the same genes. ",
+        "kor": "일란성 쌍둥이를 생각해보자. : 두 사람은 모두 똑같은 유전자를 부여받는다. "
+    },
+    {
+        "eng": "In mid\u00adlife, one twin develops cancer, and the other lives a long healthy life without cancer. ",
+        "kor": "중년에, 쌍둥이 중 한 명은 암에 걸리고, 다른 한 명은 암 없이 건강하게 오래 산다. "
+    },
+    {
+        "eng": "A specific gene instructed one twin to develop cancer, but in the other the same gene did not initiate the disease. ",
+        "kor": "특정 유전자가 쌍둥이 중 한 명에게 암에 걸리도록 명령했지만, 나머지 한명에서는 똑같은 유전자가 그 질병을 발생시키지 않았다. "
+    },
+    {
+        "eng": "One possibility is that the healthy twin had a diet that turned off the cancer gene the same gene that instructed the other person to get sick. ",
+        "kor": "한 가지 가능성은 쌍둥이 중 건강한 사람이 암 유전자, 즉 나머지 한 명이 병에 걸리도록 명령했던 그 똑같은 유전자를 차단하는 식사를 했다는 것이다. "
+    },
+    {
+        "eng": "For many years, scientists have recognized other environmental factors, such as chemical toxins (tobacco for example), can contribute to cancer through their actions on genes. ",
+        "kor": "여러 해 동안 과학자들은 화학적 독소(예를 들어 담배)와 같은 다른 환경적 요인들이 유전자에 작용하여 암의 원인이 될 수 있다는 것을 인정해 왔다. "
+    },
+    {
+        "eng": "The notion that food has a specific influence on gene expression is relatively new.",
+        "kor": "음식이 유전자 발현에 특정한 영향을 미친다는 생각은 비교적 새로운 것이다."
+    }
+]
+}

@@ -1,15 +1,15 @@
-string = """Some beginning researchers mistakenly believe that a good hypothesis is one that is guaranteed to be right (e.g., alcohol will slow down reaction time).
-However, if we already know your hypothesis is true before you test  it,  testing your hypothesis won’t tell us anything new.
-Remember, research is supposed to produce new knowledge.
-To get new knowledge, you, as a researcher­explorer, need to leave the safety of the shore (established facts) and venture into uncharted waters (as Einstein said, “If we knew what we were doing, it would not be called research, would it?”).
-If your predictions about what will happen in these uncharted waters are wrong, that’s okay:
-Scientists are allowed to make mistakes (as Bates said, “Research is the process of going up alleys to see if they are blind”).
-Indeed, scientists often learn more from predictions that do not turn out than from those that do."""
+string = """Of all the medical achievements of the 1960s, the most widely known was the first heart transplant, performed by the South African surgeon Christiaan Barnard in 1967. 
+The patient’s death 18 days later did not weaken the spirits of those who welcomed a new era of medicine. 
+The ability to perform heart transplants was linked to the development of respirators, which had been introduced to hospitals in the 1950s. 
+Respirators could save many lives, but not all those whose hearts kept beating ever recovered any other significant functions. 
+In some cases, their brains had ceased to function altogether. 
+The realization that such patients could be a source of organs for transplantation led to the setting up of the Harvard Brain Death Committee, and to its recommendation that the absence of all “discernible central nervous system activity” should be “a new criterion for death”.
+The recommendation has since been adopted, with some modifications, almost everywhere. """
 
 import json
 
-basicPath = r"sources\2021"
-problem = 24
+basicPath = r"sources\2020"
+problem = 39
 
 string = string.strip()
 stringPart = string.split("\n")

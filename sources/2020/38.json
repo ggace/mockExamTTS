@@ -1,0 +1,33 @@
+{
+    "topic" : "인간 고유의 창의력과 기계 능력 사이의 경계가 지속적인 변화를 통해 무너지고 있다.", 
+    "topicEng": "The boundary between uniquely human creativity and mechanical ability is collapsing through constant change.",
+    "content" : [{
+        "eng": "The boundary between uniquely human creativity and machine capabilities continues to change. ",
+        "kor": "인간 고유의 창의력과 기계의 능력 사이의 경계가 계속 변화하고 있다. "
+    },
+    {
+        "eng": "Returning to the game of chess, back in 1956, thirteen\u00adyear\u00adold child prodigy Bobby Fischer made a pair of remarkably creative moves against grandmaster Donald Byrne. ",
+        "kor": "과거 1956년의 체스 게임으로 돌아가 보면, 13세 신동 Bobby Fischer는 거장 Donald Byrne을 상대로 대단히 창의적인 두 수를 두었다. "
+    },
+    {
+        "eng": "First he sacrificed his knight, seemingly for no gain, and then exposed his queen to capture. ",
+        "kor": "먼저 그는 겉으로 보기에 아무런 이득도 없이 자신의 나이트를 희생시켰고, 그런 다음 퀸을 노출시켜 잡히게 했다. "
+    },
+    {
+        "eng": "On the surface, these moves seemed insane, but several moves later, Fischer used these moves to win the game. ",
+        "kor": "겉으로 보기에는 이렇게 말을 쓰는 것이 비상식적으로 보였지만, 몇 수를 더 두고 나서, Fischer는 이 수를 이용하여 그 게임에서 승리했다. "
+    },
+    {
+        "eng": "His creativity was praised at the time as the mark of genius.  ",
+        "kor": "당시 그의 창의성은 천재성을 나타내는 표시로 칭송받았다. "
+    },
+    {
+        "eng": "Yet today if you program that same position into an ordinary chess program, it will immediately suggest the exact moves that Fischer made. ",
+        "kor": "하지만 오늘날 보통의 체스 프로그램에 그와 똑같은 배치를 설정하면, 그것은 즉시 Fischer가 두었던 바로 그 수를 제안할 것이다. "
+    },
+    {
+        "eng": "It\u2019s not because the computer has memorized the Fischer\u00adByrne game, but rather because it searches far enough ahead to see that these moves really do pay off.",
+        "kor": "그것은 컴퓨터가 Fischer와 Byrne의 게임을 암기했기 때문이 아니라, 이러한 수가 실제로 성과를 거둔다는 것을 볼 수 있을 만큼 충분히 멀리 앞을 탐색하기 때문이다."
+    }
+]
+}

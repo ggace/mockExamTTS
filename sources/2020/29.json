@@ -1,0 +1,29 @@
+{
+    "topic" : "항공기 운항 원리와 조종사 활동", 
+    "topicEng": "Aircraft operating principles and pilot activities",
+    "content" : [{
+        "eng": "Commercial airplanes generally travel airways similar to roads, although they are not physical structures. ",
+        "kor": "일반적으로 민간 항공기는 물리적 구조물은 아니지만 도로와 유사한 항로로 운항한다. "
+    },
+    {
+        "eng": "Airways have fixed widths and defined altitudes, which separate traffic moving in opposite directions. ",
+        "kor": "항로에는 고정된 폭과 규정된 고도가 있으며, 그것들이 반대 방향으로 움직이는 통행을 분리한다. "
+    },
+    {
+        "eng": "Vertical separation of aircraft allows some flights to pass over airports while other processes occur below. ",
+        "kor": "항공기 간에 상하 간격을 둠으로써 아래에서 다른 과정이 이루어지는 동안 일부 비행기가 공항 위를 통과할 수 있게 된다. "
+    },
+    {
+        "eng": "Air travel usually covers long distances, with short periods of intense pilot activity at takeoff and landing and long periods of lower pilot activity while in the air, the portion of the flight known as the \u201clong haul.\u201d ",
+        "kor": "항공 여행은 보통 장거리에 걸치며, 이륙과 착륙 시 짧은 시간의 고강도 조종사 활동과, ‘장거리 비행’이라고 알려진 비행 부분인, 공중에 있는 동안 긴 시간의 저강도 조종사 활동이 있다. "
+    },
+    {
+        "eng": "During the long\u00adhaul portion of a flight, pilots spend more time assessing aircraft status than searching out nearby planes. ",
+        "kor": "비행에서 장거리 비행 부분 동안 조종사들은 근처의 비행기를 탐색하는 것보다 항공기 상태를 평가하는 데 더 많은 시간을 보낸다. "
+    },
+    {
+        "eng": "This is because collisions between aircraft usually occur in the surrounding area of airports, while crashes due to aircraft malfunction tend to occur during long\u00adhaul flight.",
+        "kor": "이는 항공기 간의 충돌은 대개 공항 주변 지역에서 발생하는 반면 항공기 오작동으로 인한 추락은 장거리 비행 중에 발생하는 경향이 있기 때문이다."
+    }
+]
+}
