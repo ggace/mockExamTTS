@@ -2,15 +2,15 @@
     "topic": "집단 내의 문제 해결에 있어서 가장 효과적인 포용성",
     "topicEng": "The most effective inclusivity in solving problems within the group",
     "content": [{
-            "eng": "While reflecting on the needs of organizations, leaders, and families today, we realize that one of the unique characteristics is inclusivity.",
+            "eng": "While [reflecting on] the needs of organizations, leaders, and families today, we realize [that] one of the unique characteristics [is] inclusivity.",
             "kor": "오늘날 조직, 지도자, 그리고 가족의 요구에 관해 곰곰이 생각할 때 우리는 독특한 특성 중 하나가 포용성이라는 것을 깨닫는다."
         },
         {
-            "eng": "Why? Because inclusivity supports what everyone ultimately wants from their relationships: collaboration.",
+            "eng": "Why? Because inclusivity supports [what] everyone ultimately wants from their relationships: {<collaboration>}.",
             "kor": "왜 그런가? 포용성은 모든 사람이 자신의 관계에서 궁극적으로 원하는 것인 협력을 뒷받침하기 때문이다."
         },
         {
-            "eng": "Yet the majority of leaders, organizations, and families are still using the language of the old paradigm in which one person \u2014 typically the oldest, most educated, and/or wealthiest \u2014 makes all the decisions, and their decisions rule with little discussion or inclusion of others, resulting in exclusivity.",
+            "eng": "Yet [the majority of] leaders, organizations, and families [are] still using the language of the old paradigm [in which] one person \u2014 typically the oldest, most educated, and/or wealthiest \u2014 [makes] all the decisions, and their decisions rule with little discussion or inclusion of others, [resulting in] exclusivity.",
             "kor": "그러나 대다수의 지도자, 조직, 그리고 가족은 여전히 오래된 패러다임의 언어를 사용하고 있고, 거기서는 한 사람이, 보통 가장 연장자, 가장 교육을 많이 받은 사람, 그리고/또는 가장 부유한 사람인데, 모든 결정을 내리고 토론이나 다른 사람을 포함시키는 것이 거의 없이 그들의 결정이 지배하고 결과적으로 배타성을 초래한다."
         },
         {
@@ -18,11 +18,11 @@
             "kor": "오늘날 이 사람은 어떤 조직의 관리자, 최고 경영자, 또는 다른 상급 지도자일 수 있다."
         },
         {
-            "eng": "There is no need for others to present their ideas because they are considered inadequate.",
+            "eng": "There is no need [for others to present] their ideas because they are considered inadequate.",
             "kor": "다른 사람들이 자신의 생각을 제시할 필요가 없는데 왜냐하면 그것은 부적절한 것으로 여겨지기 때문이다."
         },
         {
-            "eng": "Yet research shows that exclusivity in problem solving, even with a genius, is not as effective as inclusivity, where everyone\u2019s ideas are heard and a solution is developed through collaboration.",
+            "eng": "Yet research shows that exclusivity in problem solving, even with a genius, is not [as effective as] inclusivity, where everyone\u2019s ideas are hear and a solution is developed through {collaboration.}",
             "kor": "그러나 연구에 따르면 문제 해결에 있어서 배타성은, 심지어 천재와 함께하는 것이더라도, 포용성만큼 효과적이지 않은데, 포용성이 있는 경우에는 모든 사람의 생각을 듣게 되고 해결책은 협력을 통해 발전된다."
         }
     ]

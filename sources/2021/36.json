@@ -10,11 +10,11 @@
             "kor": "예를 들어, 토론토 대학의 의대생들에 대한 최근의 장기간의 연구는 의대 학년 대표들이 다른 의대 졸업생들 보다 평균 2.4년 더 적게 살았다는 결론을 내렸다."
         },
         {
-            "eng": "At first glance, this seemed to imply that being a medical school class president is bad for you.",
+            "eng": "At first glance, this seemed to imply that [being] a medical school class president is bad for you.",
             "kor": "처음 봐서는, 이것은 의대 학년 대표인 것이 여러분에게 해롭다는 것을 의미하는 것처럼 보였다."
         },
         {
-            "eng": "Does this mean that you should avoid being medical school class president at all costs?",
+            "eng": "Does this mean that you should avoid [being] medical school class president at all costs?",
             "kor": "이것은 여러분이 무슨 수를 써서라도 의대 학년 대표가 되는 것을 피해야 한다는 것을 의미하는가?"
         },
         {
@@ -22,11 +22,11 @@
             "kor": "아마도 그렇지는 않을 것이다."
         },
         {
-            "eng": "Just because being class president is correlated with shorter life expectancy does not mean that it causes shorter life expectancy.",
+            "eng": "Just because [being] class president is correlated with shorter life expectancy does not mean that it causes shorter life expectancy.",
             "kor": "단지 학년 대표인 것이 더 짧은 평균 수명과 서로 관련된다고 해서 그것이 더 짧은 평균 수명을 ‘유발한다’ 는 의미는 아니다."
         },
         {
-            "eng": "In fact, it seems likely that the sort of person who becomes medical school class president is, on average, extremely hard\u00adworking, serious, and ambitious.",
+            "eng": "{In fact, [it] seems likely [that] the sort of person who becomes medical school class president is, on average, [extremely] hard\u00adworking, serious, and ambitious.}",
             "kor": "사실, 아마도 의대 학년 대표가 되는 그런 부류의 사람은 평균적으로 몹시 열심히 공부하고, 진지하며, 야망이 있는 것 같다."
         },
         {
@@ -34,7 +34,7 @@
             "kor": "의대 학년 대표인 것 그 자체라기보다 아마도 이러한 가중된 스트레스와 그에 상응하는 사교와 휴식 시 간의 부족이 더 짧은 평균 수명의 원인인 것 같다."
         },
         {
-            "eng": "If so, the real lesson of the study is that we should all relax a little and not let our work take over our lives.",
+            "eng": "If so, the real lesson of the study is that{ we should all relax a little and not [let our work take over] our lives}.",
             "kor": "만약 그렇다면, 이 연구의 진정한 교훈은 우리 모두가 약간의 휴식을 취해야 하고 우리의 일이 우리의 삶을 장악하게 해서는 안 된다는 것이다."
         }
     ]

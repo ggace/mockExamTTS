@@ -2,7 +2,7 @@
     "topic": "사람들은 자신이 처한 상황에 따라 자연스럽게 인지 노동을 구분한다.",
     "topicEng": "People naturally distinguish cognitive labor according to their situation",
     "content": [{
-            "eng": "Psychological research has shown that people naturally divide up cognitive labor, often without thinking about it.",
+            "eng": "Psychological research has shown that people naturally {divide up cognitive labor}, often without thinking about it.",
             "kor": "심리학 연구에 따르면, 사람들은 자연스럽게 인지 노동을 나누는데, 흔히 그것에 대해서 별 생각 없이 그렇게 한다."
         },
         {
@@ -14,7 +14,7 @@
             "kor": "여러분은 요리를 잘하지만, 친구는 아마추어 소믈리에라고 할 수 있는 와인 전문가이다"
         },
         {
-            "eng": "A neighbor drops by and starts telling you both about the terrific new wines being sold at the liquor store just down the street.",
+            "eng": "A neighbor drops by and starts telling you both about the terrific new wines [being sold] at the liquor store just down the street.",
             "kor": "이웃이 들르더니 여러분 두 사람에게 거리를 따라가면 바로 있는 주류 가게에서 파는 기막히게 좋은 새로운 와인에 대해 말하기 시작한다."
         },
         {
@@ -22,11 +22,11 @@
             "kor": "많은 새로운 와인이 있어서 기억해야 할 것이 많다."
         },
         {
-            "eng": "How hard are you going to try to remember what the neighbor has to say about which wines to buy?",
+            "eng": "How hard are you going to try to remember what the neighbor has to say about [which] wines to buy?",
             "kor": "어떤 와인을 사야 하는지에 관해 이웃이 할 말을 기억하기 위해 여러분은 얼마나 열심히 노력할까?"
         },
         {
-            "eng": "Why bother when the information would be better retained by the wine expert sitting next to you?",
+            "eng": "<Why bother> when the information would be better retained by the wine expert [sitting] next to you?",
             "kor": "여러분 옆에 앉아 있는 와인 전문가가 그 정보를 더 잘 기억하고 있는데 무엇 하러 그러겠는가?"
         },
         {
@@ -34,7 +34,7 @@
             "kor": "여러분의 친구가 곁에 없다면 더 열심히 애쓸지도 모른다."
         },
         {
-            "eng": "After all, it would be good to know what a good wine would be for the evening\u2019s festivities.",
+            "eng": "After all, [it] would be good [to know] what a good wine would be for the evening\u2019s festivities.",
             "kor": "어쨌든 저녁 만찬을 위해 뭐가 좋은 와인이 될지 아는 것은 좋은 일일 것이다."
         },
         {

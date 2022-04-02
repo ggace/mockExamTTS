@@ -11,7 +11,8 @@
         <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
         <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="index.js"></script>
+        
+        <!--<script src="index.js"></script>-->
         
         <script type="text/babel" src="header.js"></script>
         <script type="text/babel" src="audio.js"></script>
@@ -47,7 +48,8 @@
             })
 
             function changeContent(){
-                fetch("https://ggace.github.io/mockExamTTS/sources/" + years[setting.yearIndex]+ "/" + problemOfYear[years[setting.yearIndex]][setting.problemIndex] + ".json")
+                //fetch("https://ggace.github.io/mockExamTTS/sources/" + years[setting.yearIndex]+ "/" + problemOfYear[years[setting.yearIndex]][setting.problemIndex] + ".json")
+                fetch("../sources/" + years[setting.yearIndex]+ "/" + problemOfYear[years[setting.yearIndex]][setting.problemIndex] + ".json")
                 .then((res)=>res.json())
                 .then((result)=>{
                     
@@ -57,18 +59,36 @@
                         <br />
                     </div>)
                     let elements = result.content.map((content)=> {
+                        let eng = content.eng
+                            .replaceAll("<", "<span style='background-color:skyblue'>")
+                            .replaceAll(">", "</span>")
+                            .replaceAll("[", "<span style='background-color:yellow'>")
+                            .replaceAll("]", "</span>")
+                            .replaceAll("{", "<span style='color:red'>")
+                            .replaceAll("}", "</span>")
+                        let kor = content.kor
                         return (
                             <div>
                                 
-                                <p style={{"fontSize":"20px"}}>{content.eng}</p>
-                                <p>{content.kor}</p>
+                                <p style={{"fontSize":"20px"}} dangerouslySetInnerHTML={{__html:eng}}></p>
+                                <p>{kor}</p>
                             </div>
                         )
                     })
 
                     ReactDOM.render(<div>{head}{topic}{elements}</div>, document.getElementById('content')); 
+                    //document.getElementById('content').innerHtml = <div>{head}{topic}{elements}</div>
                 })
             }
         </script>
+
+        <div id="footer">
+            <br />
+            <h3>처리 설명</h3>
+            <div style="color: red; display: inline-block"><b>{빈칸추론}</b></div>
+            <div style='background-color:yellow; display: inline-block'>[문법]</div>
+            <div style='background-color:skyblue; display: inline-block'><단어></div>
+
+        </div>
     </body>
 </html>

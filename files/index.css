@@ -13,7 +13,7 @@
     font-size: '30px'
 }
 
-#audio, #controller, #content {
+#audio, #controller, #content, #footer {
     
     display: block;
     margin: 0 auto;
