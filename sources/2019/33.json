@@ -1,0 +1,30 @@
+{
+    "topic" : "테세우스 배의 역설", 
+    "topicEng": "The ship of Theseus paradox",
+    "content": [
+        {
+            "eng": "Theseus was a great hero to the people of Athens.",
+            "kor": "Theseus는 아테네 사람들에게 위대한 영웅이었다."
+        },
+        {
+            "eng": "When he returned home after a war, the ship that had carried him and his men was so treasured that the townspeople preserved it for years and years, replacing its old, rotten planks with new pieces of wood.",
+            "kor": "그가 전쟁을 마치고 집으로 돌아왔을 때, 그와 그의 병사들을 태우고 다녔던 배는 매우 소중히 여겨져, 시민들은 그 배의 낡고 썩은 널빤지를 새로운 나무 조각으로 교체하면서, 그 배를 여러 해 동안 계속 보존했다."
+        },
+        {
+            "eng": "The question Plutarch asks philosophers is this: is the repaired ship still the same ship that Theseus had sailed?",
+            "kor": "Plutarch가 철학자들에게 하는 질문은 이것이다.; 수리된 배는 여전히 Theseus가 타고 항해했던 바로 그 배인가?"
+        },
+        {
+            "eng": "Removing one plank and replacing it might not make a difference, but can that still be true once all the planks have been replaced?",
+            "kor": "널빤지 하나를 제거하여 교체하는 것은 차이가 없을 수도 있지만, 모든 널빤지가 교체되었을 때도 여전히 그러할 수 있을까?"
+        },
+        {
+            "eng": "Some philosophers argue that the ship must be the sum of all its parts.",
+            "kor": "일부 철학자들은 그 배는 모든 부분의 총합이어야 한다고 주장한다."
+        },
+        {
+            "eng": "But if this is true, then as the ship got pushed around during its journey and lost small pieces, it would already have stopped being the ship of Theseus.",
+            "kor": "그러나 만일 이것이 사실이라면, 그 배가 항해하는 동안 이리저리 밀쳐져 작은 조각들을 잃었을 때, 그것은 이미 Theseus의 배가 아니게 되었을 것이다."
+        }
+    ]
+}

@@ -1,11 +1,11 @@
 from gtts import gTTS
 import json
 
-years = [2020]
+years = [2019]
 
-isSpeakTopic = True;
+isSpeakTopic = False;
 isSpeakEng = True;
-isSpeakKor = True;
+isSpeakKor = False;
 
 tags = []
 
@@ -21,7 +21,7 @@ for year in years:
     basicPath = rf"sources\{year}"
     resultPath = rf"output\{year}"
 
-    problems = [23,24,29,30,31,32,33,34,36,37,38,39]
+    problems = [22,23,28,29,30,31,32,33,34,37,38,39]
     
     
     for problem in problems:

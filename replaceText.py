@@ -1,14 +1,14 @@
-string = """Of all the medical achievements of the 1960s, the most widely known was the first heart transplant, performed by the South African surgeon Christiaan Barnard in 1967. 
-The patient’s death 18 days later did not weaken the spirits of those who welcomed a new era of medicine. 
-The ability to perform heart transplants was linked to the development of respirators, which had been introduced to hospitals in the 1950s. 
-Respirators could save many lives, but not all those whose hearts kept beating ever recovered any other significant functions. 
-In some cases, their brains had ceased to function altogether. 
-The realization that such patients could be a source of organs for transplantation led to the setting up of the Harvard Brain Death Committee, and to its recommendation that the absence of all “discernible central nervous system activity” should be “a new criterion for death”.
-The recommendation has since been adopted, with some modifications, almost everywhere. """
+string = """Hubert Cecil Booth is often credited with inventing the first powered mobile vacuum cleaner.
+In fact, he only claimed to be the first to coin the term “vacuum cleaner” for devices of this nature, which may explain why he is so credited.
+As we all know, the term “vacuum” is an inappropriate name, because there exists no vacuum in a vacuum cleaner.
+Rather, it is the air moving through a small hole into a closed container, as a result of air being blown out of the container by a fan on the inside.
+But I suppose a “rapid air movement in a closed container to create suction” cleaner would not sound as scientific or be as handy a name.
+Anyway, we are stuck with it historically, and it is hard to find any references to “vacuum” prior to Booth.
+Interestingly, Booth himself did not use the term “vacuum” when he filed a provisional specification describing in general terms his intended invention."""
 
 import json
 
-basicPath = r"sources\2020"
+basicPath = r"sources\2019"
 problem = 39
 
 string = string.strip()
@@ -24,9 +24,10 @@ tempList = json.dumps(tempList)
 f = open(rf'{basicPath}\{problem}.json', 'w', encoding='UTF8')
 f.write("{")
 f.write("\n")
-f.write(f"\"topic\" : \"\", ")
+f.write(f"\t\"topic\" : \"\", ")
 f.write("\n")
-f.write(f"\"content\" : {tempList}")
+f.write('"topicEng": "",')
+f.write(f"\t\"content\" : {tempList}")
 f.write("\n")
 f.write("}")
 
