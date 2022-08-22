@@ -1,45 +1,46 @@
 {
-    "topic": "과세의 숨겨진 역할 : 과세는 다양한 사회적 가치를 포함한 행위이다.",
-    "topicEng": "The hidden role of taxation: Taxation is an activity involving a variety of social values",
-    "content": [{
-            "eng": "We commonly argue about the fairness of taxation \u2015 whether this or that tax will fall more heavily on the [rich or the poor].",
-            "kor": "우리는 흔히 과세의 공정성, 즉 이런 저런 세금이 부자들에게 더 과중하게 부과될 것인지 아니면 가난한 사 람들에게 그럴 것인지에 관해 논한다."
-        },
-        {
-            "eng": "But the expressive dimension of taxation goes beyond debates about fairness, to the moral judgements societies make about which activities are worthy of honor and recognition, and which <ones> should be discouraged.",
-            "kor": "그러나 과세의 표현적 차원은 공정성에 대한 논쟁을 넘어, 어떤 활동이 명예와 인정을 받을 가치가 있 고 어떤 활동이 억제되어야 하는지에 대해 사회가 내리는 도덕적 판단에까지 이른다."
-        },
-        {
-            "eng": "Sometimes, these judgements are explicit.",
-            "kor": "때때로 이러한 판단은 명백하다."
-        },
-        {
-            "eng": "Taxes on tobacco, alcohol, and casinos are called \u201csin taxes\u201d because they seek to discourage activities [considered] [harmful] or [undesirable].",
-            "kor": "담배, 술, 그리고 카지노에 대한 세금은 해롭거나 바람직하지 않은 것으로 간주되는 활동들을 억제하려고 하기 때문에 ‘죄악세’라고 불린다."
-        },
-        {
-            "eng": "Such taxes express society\u2019s disapproval of these activities by raising the cost of engaging in them.",
-            "kor": "그런 세금은 이러한 활동을 하는 데 드는 비용을 증가시킴으로써 그것에 대한 사회의 반대를 표현한다."
-        },
-        {
-            "eng": "Proposals to tax sugary sodas (to combat obesity) or carbon emissions (to address climate change) likewise seek [to change] norms and [shape] behavior.",
-            "kor": "마찬가지로 (비만에 맞서기 위해) 설탕이 든 탄산음료에 세금을 부과하는 제안이나 (기후 변화에 대처하기 위 해) 탄소 배출에 세금을 부과하는 제안은 규범을 바꾸고 행동을 형성하려 한다."
-        },
-        {
-            "eng": "{Not all taxes have this aim.}",
-            "kor": "모든 세금이 이런 목적을 가진 것은 아니다."
-        },
-        {
-            "eng": "We do not tax income to express disapproval of paid employment or to discourage people from engaging in it.",
-            "kor": "우리는 유급 고용에 대한 반대를 표명하거나 사람들이 그것을 하는 것을 막기 위해 소득에 세금을 부과하는 것은 아니다."
-        },
-        {
-            "eng": "[Nor is a general sales tax] [intended] as a {deterrent} to buying things.",
-            "kor": "일반 판매세 역시 물건을 사는 것의 억제책으로서 의도된 것이 아니다."
-        },
-        {
-            "eng": "These are simply ways of raising revenue.",
-            "kor": "이것들은 단순히 세입을 올리는 방법이다."
-        }
-    ]
+	"topic": "대부분 포유류에 적용되는 동일한 심장박동수와 에너지 요구량 원칙에 있어 인간은 예외다.",
+	"topicEng": "Humans are the exception to the same heart rate and energy requirement principles that apply to most mammals.",
+	"content": [
+		{
+			"eng": "Heat is lost at the surface, so the more surface area you have relative to volume, the harder you must work to stay warm.",
+			"kor": "열은 표면에서 손실되므로, 당신이 체적에 대비하여 더 많은 표면적을 가질수록 당신은 따뜻함을 유지하기 위해 더 열심히 움직여야 한다."
+		},
+		{
+			"eng": "That means that little creatures have to produce heat more rapidly than large creatures.",
+			"kor": "그것은 작은 생물이 큰 생물보다 더 빠르게 열을 생산해야 함을 의미한다."
+		},
+		{
+			"eng": "They must therefore lead completely different lifestyles.",
+			"kor": "그러므로 그들은 완전히 다른 생활방식으로 살아가야만 한다."
+		},
+		{
+			"eng": "An elephant’s heart beats just thirty times a minute, a human’s sixty, a cow’s between fifty and eighty, but a mouse’s beats six hundred times a minute — ten times a second.",
+			"kor": "코끼리의 심장은 1분에 단 30회를 뛰고 인간은 60회, 소는 50회에서 80회를 뛰지만, 생쥐는 1분에 600회, 즉 1초에 10회를 뛴다."
+		},
+		{
+			"eng": "Every day, just to survive, the mouse must eat about 50 percent of its own body weight.",
+			"kor": "매일 단지 살아남기 위해 생쥐는 자신의 몸무게의 약 50퍼센트를 먹어야 한다."
+		},
+		{
+			"eng": "We humans, by contrast, need to consume only about 2 percent of our body weight to supply our energy requirements.",
+			"kor": "대조적으로 우리 인간은 에너지 요구량을 공급하기 위해 우리 신체 무게의 단지 약 2퍼센트만 먹으면 된다."
+		},
+		{
+			"eng": "One area where animals are curiously uniform is with the number of heartbeats they have in a lifetime.",
+			"kor": "동물이 기묘하게도 동일한 하나의 영역은 동물이 평생동안 뛰는 심장박동 수라는 부분이다."
+		},
+		{
+			"eng": "Despite the vast differences in heart rates, nearly all mammals have about 800 million heartbeats in them if they live an average life.",
+			"kor": "심장박동수의 엄청난 차이에도 불구하고 거의 모든 포유동물은 만약 그들이 평균수명을 산다면 약 8억 회의 심장 박동수를 갖는다."
+		},
+		{
+			"eng": "The exception is humans.",
+			"kor": "예외는 인간이다."
+		},
+		{
+			"eng": "We pass 800 million heartbeats after twenty­five years, and just keep on going for another fifty years and 1.6 billion heartbeats or so.",
+			"kor": "우리는 25년 이후 8억 회를 넘어서고 또 다른 50년동안 계속해서 심장이 뛰어 약 16억회 정도의 심장박동 수를 갖는다."
+		}
+	]
 }

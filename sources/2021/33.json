@@ -1,45 +1,38 @@
 {
-    "topic": "사람들은 자신이 처한 상황에 따라 자연스럽게 인지 노동을 구분한다.",
-    "topicEng": "People naturally distinguish cognitive labor according to their situation",
-    "content": [{
-            "eng": "Psychological research has shown that people naturally {divide up cognitive labor}, often without thinking about it.",
-            "kor": "심리학 연구에 따르면, 사람들은 자연스럽게 인지 노동을 나누는데, 흔히 그것에 대해서 별 생각 없이 그렇게 한다."
-        },
-        {
-            "eng": "Imagine you\u2019re cooking up a special dinner with a friend.",
-            "kor": "여러분이 친구와 함께 특별한 저녁식사를 요리하고 있다고 상상해 보라."
-        },
-        {
-            "eng": "You\u2019re a great cook, but your friend is the wine expert, an amateur sommelier.",
-            "kor": "여러분은 요리를 잘하지만, 친구는 아마추어 소믈리에라고 할 수 있는 와인 전문가이다"
-        },
-        {
-            "eng": "A neighbor drops by and starts telling you both about the terrific new wines [being sold] at the liquor store just down the street.",
-            "kor": "이웃이 들르더니 여러분 두 사람에게 거리를 따라가면 바로 있는 주류 가게에서 파는 기막히게 좋은 새로운 와인에 대해 말하기 시작한다."
-        },
-        {
-            "eng": "There are many new wines, so there\u2019s a lot to remember.",
-            "kor": "많은 새로운 와인이 있어서 기억해야 할 것이 많다."
-        },
-        {
-            "eng": "How hard are you going to try to remember what the neighbor has to say about [which] wines to buy?",
-            "kor": "어떤 와인을 사야 하는지에 관해 이웃이 할 말을 기억하기 위해 여러분은 얼마나 열심히 노력할까?"
-        },
-        {
-            "eng": "<Why bother> when the information would be better retained by the wine expert [sitting] next to you?",
-            "kor": "여러분 옆에 앉아 있는 와인 전문가가 그 정보를 더 잘 기억하고 있는데 무엇 하러 그러겠는가?"
-        },
-        {
-            "eng": "If your friend wasn\u2019t around, you might try harder.",
-            "kor": "여러분의 친구가 곁에 없다면 더 열심히 애쓸지도 모른다."
-        },
-        {
-            "eng": "After all, [it] would be good [to know] what a good wine would be for the evening\u2019s festivities.",
-            "kor": "어쨌든 저녁 만찬을 위해 뭐가 좋은 와인이 될지 아는 것은 좋은 일일 것이다."
-        },
-        {
-            "eng": "But your friend, the wine expert, is likely to remember the information without even trying.",
-            "kor": "하지만, 와인 전문가인 여러분의 친구는 애쓰지도 않고 그 정보를 기억하기가 쉽다."
-        }
-    ]
+	"topic": "우리의 정신은 저장된 감정들을 활성화시켜 우리의 경험을 행복과 기쁨으로 만드는 유전자를 가지고 있다.",
+	"topicEng": "Our minds have genes that activate stored emotions that make our experiences happy and joyous.",
+	"content": [
+		{
+			"eng": "The most powerful emotional experiences are those that bring joy, inspiration, and the kind of love that makes suffering bearable.",
+			"kor": "가장 강력한 감정적 경험은 기쁨, 영감, 고통을 견딜 수 있게 만드는 일종의 사랑을 가져다주는 경험이다."
+		},
+		{
+			"eng": "These emotional experiences are the result of choices and behaviors that result in our feeling happy.",
+			"kor": "이러한 감정적 경험은 우리가 행복하다고 느끼는 것으로 귀착하는(끝나는) 선택과 행동의 결과이다."
+		},
+		{
+			"eng": "When we look at happiness through a spiritual filter, we realize that it does not mean the absence of pain or heartache.",
+			"kor": "우리가 정신적 필터를 통해 행복을 바라볼 때, 우리는 그것이 고통이나 마음의 아픔이 없다는 것을 의미하는 것이 아니라는 것을 깨닫는다."
+		},
+		{
+			"eng": "Sitting with a sick or injured child, every parent gets to know the profound joy that bubbles over when a son or daughter begins to heal.",
+			"kor": "아프거나 다친 아이와 함께 앉아 있으면, 모든 부모는 아들 혹은 딸이 치유되기 시작할 때 벅차오르는 깊은 기쁨을 알게 된다."
+		},
+		{
+			"eng": "This is a simple example of how we can be flooded with happiness that becomes more intense as we contrast it with previous suffering.",
+			"kor": "이것은 이전의 고통과 대조함에 따라 어떻게 우리가 더욱 강렬해진 행복으로 넘쳐날 수 있는지의 간단한 예이다."
+		},
+		{
+			"eng": "Experiences such as this go into the chemical archives of the limbic system.",
+			"kor": "이와 같은 경험은 변연계의 화학적 기록 보관소에 들어간다."
+		},
+		{
+			"eng": "Each time you experience true happiness, the stored emotions are activated as you are flooded with even deeper joy than you remembered.",
+			"kor": "진정한 행복을 경험할 때마다, 기억했던 것보다 더 깊은 기쁨이 벅차오르면서 저장된 감정이 활성화된다."
+		},
+		{
+			"eng": "Your spiritual genes are, in a sense, your biological treasure map to joy.",
+			"kor": "당신의 정신적 유전자는 어떤 의미에서 기쁨으로 가는 당신의 생물학적 보물지도이다."
+		}
+	]
 }

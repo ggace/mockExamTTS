@@ -14,7 +14,7 @@ class Header extends React.Component {
         })
 
         return (<div>
-            <h1 style={{textAlign: 'center'}}>2022 2학년 1학기 중간고사</h1>
+            <h1 style={{textAlign: 'center'}}>2022 2학년 2학기 중간고사</h1>
             <div style={{display: "flex", justifyContent: "space-around"}}>{elements}</div>
         </div>)
     }

@@ -1,11 +1,11 @@
 from gtts import gTTS
 import json
 
-years = [2019]
+years = [2021]
 
-isSpeakTopic = False;
+isSpeakTopic = True;
 isSpeakEng = True;
-isSpeakKor = False;
+isSpeakKor = True;
 
 tags = []
 
@@ -21,12 +21,12 @@ for year in years:
     basicPath = rf"sources\{year}"
     resultPath = rf"output\{year}"
 
-    problems = [22,23,28,29,30,31,32,33,34,37,38,39]
+    problems = [20,21,22,23,24,29,30,31,32,33,34,35,36,37,38,39]
     
     
     for problem in problems:
 
-        print(f"{year}년 11월 {problem}번 : start")
+        print(f"{year}년 9월 {problem}번 : start")
 
         with open(rf'{basicPath}\{problem}.json', 'r', encoding='UTF8') as f:
             json_data = json.load(f)
@@ -68,5 +68,5 @@ for year in years:
             tts_content.write_to_fp(f)
         f.close()
 
-        print(f"{year}년 11월 {problem}번 : done")
+        print(f"{year}년 9월 {problem}번 : done")
     

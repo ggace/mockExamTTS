@@ -1,41 +1,42 @@
 {
-    "topic": "원인 분석의 오류를 인식해야 어떤 현상에 대한 진정한 의미와 교훈을 얻을 수 있다.",
-    "topicEng": "Recognizing errors in causes analysis can help you learn the true meaning and lessons of a phenomenon",
-    "content": [{
-            "eng": "Once we recognize the false\u00adcause issue, we see it everywhere.",
-            "kor": "일단 잘못 파악한 원인 문제를 우리가 인식하면, 우리는 그것을 어디에서나 보게 된다."
-        },
-        {
-            "eng": "For example, a recent  long\u00adterm study of University of Toronto medical  students concluded  that medical  school  class  presidents  lived  an  average  of  2.4  years  less  than  other  medical  school graduates.",
-            "kor": "예를 들어, 토론토 대학의 의대생들에 대한 최근의 장기간의 연구는 의대 학년 대표들이 다른 의대 졸업생들 보다 평균 2.4년 더 적게 살았다는 결론을 내렸다."
-        },
-        {
-            "eng": "At first glance, this seemed to imply that [being] a medical school class president is bad for you.",
-            "kor": "처음 봐서는, 이것은 의대 학년 대표인 것이 여러분에게 해롭다는 것을 의미하는 것처럼 보였다."
-        },
-        {
-            "eng": "Does this mean that you should avoid [being] medical school class president at all costs?",
-            "kor": "이것은 여러분이 무슨 수를 써서라도 의대 학년 대표가 되는 것을 피해야 한다는 것을 의미하는가?"
-        },
-        {
-            "eng": "Probably not.",
-            "kor": "아마도 그렇지는 않을 것이다."
-        },
-        {
-            "eng": "Just because [being] class president is correlated with shorter life expectancy does not mean that it causes shorter life expectancy.",
-            "kor": "단지 학년 대표인 것이 더 짧은 평균 수명과 서로 관련된다고 해서 그것이 더 짧은 평균 수명을 ‘유발한다’ 는 의미는 아니다."
-        },
-        {
-            "eng": "{In fact, [it] seems likely [that] the sort of person who becomes medical school class president is, on average, [extremely] hard\u00adworking, serious, and ambitious.}",
-            "kor": "사실, 아마도 의대 학년 대표가 되는 그런 부류의 사람은 평균적으로 몹시 열심히 공부하고, 진지하며, 야망이 있는 것 같다."
-        },
-        {
-            "eng": "Perhaps this extra stress, and the corresponding lack of social and relaxation time \u2014 rather than being class president per se \u2014 contributes to lower life expectancy.",
-            "kor": "의대 학년 대표인 것 그 자체라기보다 아마도 이러한 가중된 스트레스와 그에 상응하는 사교와 휴식 시 간의 부족이 더 짧은 평균 수명의 원인인 것 같다."
-        },
-        {
-            "eng": "If so, the real lesson of the study is that{ we should all relax a little and not [let our work take over] our lives}.",
-            "kor": "만약 그렇다면, 이 연구의 진정한 교훈은 우리 모두가 약간의 휴식을 취해야 하고 우리의 일이 우리의 삶을 장악하게 해서는 안 된다는 것이다."
-        }
-    ]
+	"topic": "독립적 민족정신을 유지하기 위한 조건",
+	"topicEng": "The conditions for maintaining an independent national ethos.",
+	"content": [
+		{
+			"eng": "When trying to sustain an independent ethos, cultures face a problem of critical mass.",
+			"kor": "독립적인 민족(사회) 정신을 유지하려고 할 때, 문화는 결정적 질량(임계 질량)의 문제에 직면한다."
+		},
+		{
+			"eng": "No single individual, acting on his or her own, can produce an ethos.",
+			"kor": "자신 혼자서 행동하는 어떤 한 개인도 민족(사회) 정신을 만들어 낼 수 없다."
+		},
+		{
+			"eng": "Rather, an ethos results from the interdependent acts of many individuals.",
+			"kor": "오히려 민족(사회) 정신은 많은 개인의 상호의존적인 행위에서 비롯된다."
+		},
+		{
+			"eng": "This cluster of produced meaning may require some degree of insulation from larger and wealthier outside forces.",
+			"kor": "생성된 의미의 이러한 군집은 더 크고 더 부유한 외부 힘으로부터 어느 정도의 단절을 필요로 할 수 있다."
+		},
+		{
+			"eng": "The Canadian Inuit maintain their own ethos, even though they number no more than twenty­four thousand.",
+			"kor": "캐나다 이누이트족은 비록 2만 4천 명에도 불과하지만 그들만의 민족(사회) 정신을 유지하고 있다."
+		},
+		{
+			"eng": "They manage this feat through a combination of trade, to support their way of life, and geographic isolation.",
+			"kor": "그들은 삶을 유지하기 위해 무역과 지리적 고립의 조합을 통해 이러한 업적을 해낸다."
+		},
+		{
+			"eng": "The Inuit occupy remote territory, removed from major population centers of Canada.",
+			"kor": "이누이트족은 캐나다의 주요 인구 중심지에서 따로 멀리 떨어진 영토를 차지하고 있다."
+		},
+		{
+			"eng": "If cross­cultural contact were to become sufficiently close, the Inuit ethos would disappear.",
+			"kor": "만약 문화 간 접촉이 충분히 긴밀해진다면, 이누이트인들의 민족(사회) 정신이 사라지게 될 것이다."
+		},
+		{
+			"eng": "Distinct cultural groups of similar size do not, in the long run, persist in downtown Toronto, Canada, where they come in contact with many outside influences and pursue essentially Western paths for their lives.",
+			"kor": "비슷한 규모의 다른 문화 집단은 캐나다 토론토 도심에서는 결국 지속되지 않는데, 거기에서 그들은 많은 외부 영향과 접촉하고 그들의 삶을 위해 본질적으로 서구적 방식을 추구한다."
+		}
+	]
 }

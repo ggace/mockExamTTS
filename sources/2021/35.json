@@ -1,25 +1,26 @@
 {
-    "topic": "어린 소비자 상대 판촉활동의 윤리적 논란: 아이들에게 부적절한 감정과 물질 만능주의를 심어준다.",
-    "topicEng": "Ethical controversy over promoting to young customers: Installing inappropriate emotions and materialism in children",
-    "content": [{
-            "eng": "Academics, politicians, marketers and others have in the past debated whether or not [it] is ethically correct [to market] products and services directly to young consumers.",
-            "kor": "지금까지 대학  교수, 정치인,  마케팅 담당자, 그리고 그 외의 사람들은 제품과 서비스를 어린 소비자들에게 직접 판촉하는 것이 윤리적으로 옳은지 그렇지 않은지를 논쟁해 왔다."
-        },
-        {
-            "eng": "This  is  also  a  dilemma  for  psychologists  who  have  questioned  whether  they  ought  to  help advertisers <manipulate> children into purchasing more products // they have seen advertised.",
-            "kor": "이것은 또한, 광고주들이 아이들을 조종해서 광고되는 것을 그들이 본 더 많은 제품을 구매하게 조작하는 것 을 도와야 하는지 의문을 제기하는 심리학자들에게도 딜레마이다."
-        },
-        {
-            "eng": "Advertisers have admitted to taking advantage of the fact that [it] is easy [to make] children feel that they are <losers> if they do not own the \u2018right\u2019 products.",
-            "kor": "광고주들은 아이들이 그 ‘적절한’ 제품을 소유하고 있지 않으면 자신이 패배자라고 느끼게 만드는 것이 쉽다 는 사실을 이용한 것을 인정했다."
-        },
-        {
-            "eng": "Clever advertising informs children that they will be viewed by their peers in an <unfavorable> way if they do not have the products that are advertised, thereby [playing on] their emotional <vulnerabilities>.",
-            "kor": "영리한 광고는 아이들에게 만약 그들이 광고되는 제품을 가지고 있지 않으면 자신의 또래 친구들에게 부정적 으로 보일 것이라고 알려 주고, 그로 인해 아이들의 정서적인 취약성을 이용한다."
-        },
-        {
-            "eng": "The constant feelings of <inadequateness> created by advertising [have been suggested to contribute to] children [becoming] <fixated> with instant gratification and beliefs [that] material possessions are important.",
-            "kor": "광고가 만들어 내는, 끊임없이 부적절하다고  느끼는  감정은, 아이들이 즉각적인 만족감과 물질적 소유물이 중요하다는 믿음에 집착하게 되는 데 기여한다고 언급되어 왔다."
-        }
-    ]
+	"topic": "정신 건강관리 체계에서 간호사들이 맡는 중개역할의 중요성",
+	"topicEng": "The importance of the role of nurses in the mental health care system.",
+	"content": [
+		{
+			"eng": "Nurses hold a pivotal position in the mental health care structure and are placed at the centre of the communication network, partly because of their high degree of contact with patients, but also because they have well­developed relationships with other professionals.",
+			"kor": "간호사들은 정신 건강 관리 체계에서 중추적인 역할을 맡고 있으며 의사소통망의 중심에 위치되어 있는데, 부분적으로는 그들의 환자들과의 높은 접촉 정도 뿐만 아니라 다른 전문직 종사자들과 잘 발달된 관계를 유지하기 때문이다."
+		},
+		{
+			"eng": "Because of this, nurses play a crucial role in interdisciplinary communication.",
+			"kor": "이런 이유로 간호사들은 학제간의(여러 학문 분야가 관련된) 의사소통에서 중요한 역할을 한다."
+		},
+		{
+			"eng": "They have a mediating role between the various groups of professionals and the patient and carer.",
+			"kor": "그들은 다양한 전문직 종사자들 집단과 환자와 보호자 집단 사이에서 중개 역할을 한다."
+		},
+		{
+			"eng": "This involves translating communication between groups into language that is acceptable and comprehensible to people who have different ways of understanding mental health problems.",
+			"kor": "이것은 정신 건강상의 문제를 이해하는 다양한 방식을 가진 사람들에게 납득 가능하고 이해 가능한 언어로 집단 간 의사소통을 번역하는 것을 포함한다."
+		},
+		{
+			"eng": "This is a highly sensitive and skilled task, requiring a high level of attention to alternative views and a high level of understanding of communication.",
+			"kor": "이것은 고도로 민감하고 숙련된 작업이며 대안적 시각에 대한 높은 수준의 관심과 높은 수준의 의사소통 이해를 요구한다."
+		}
+	]
 }

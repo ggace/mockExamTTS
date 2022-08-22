@@ -1,29 +1,30 @@
 {
-    "topic": "집단 내의 문제 해결에 있어서 가장 효과적인 포용성",
-    "topicEng": "The most effective inclusivity in solving problems within the group",
-    "content": [{
-            "eng": "While [reflecting on] the needs of organizations, leaders, and families today, we realize [that] one of the unique characteristics [is] inclusivity.",
-            "kor": "오늘날 조직, 지도자, 그리고 가족의 요구에 관해 곰곰이 생각할 때 우리는 독특한 특성 중 하나가 포용성이라는 것을 깨닫는다."
-        },
-        {
-            "eng": "Why? Because inclusivity supports [what] everyone ultimately wants from their relationships: {<collaboration>}.",
-            "kor": "왜 그런가? 포용성은 모든 사람이 자신의 관계에서 궁극적으로 원하는 것인 협력을 뒷받침하기 때문이다."
-        },
-        {
-            "eng": "Yet [the majority of] leaders, organizations, and families [are] still using the language of the old paradigm [in which] one person \u2014 typically the oldest, most educated, and/or wealthiest \u2014 [makes] all the decisions, and their decisions rule with little discussion or inclusion of others, [resulting in] exclusivity.",
-            "kor": "그러나 대다수의 지도자, 조직, 그리고 가족은 여전히 오래된 패러다임의 언어를 사용하고 있고, 거기서는 한 사람이, 보통 가장 연장자, 가장 교육을 많이 받은 사람, 그리고/또는 가장 부유한 사람인데, 모든 결정을 내리고 토론이나 다른 사람을 포함시키는 것이 거의 없이 그들의 결정이 지배하고 결과적으로 배타성을 초래한다."
-        },
-        {
-            "eng": "Today, this person could be a director, CEO, or other senior leader of an organization.",
-            "kor": "오늘날 이 사람은 어떤 조직의 관리자, 최고 경영자, 또는 다른 상급 지도자일 수 있다."
-        },
-        {
-            "eng": "There is no need [for others to present] their ideas because they are considered inadequate.",
-            "kor": "다른 사람들이 자신의 생각을 제시할 필요가 없는데 왜냐하면 그것은 부적절한 것으로 여겨지기 때문이다."
-        },
-        {
-            "eng": "Yet research shows that exclusivity in problem solving, even with a genius, is not [as effective as] inclusivity, where everyone\u2019s ideas are hear and a solution is developed through {collaboration.}",
-            "kor": "그러나 연구에 따르면 문제 해결에 있어서 배타성은, 심지어 천재와 함께하는 것이더라도, 포용성만큼 효과적이지 않은데, 포용성이 있는 경우에는 모든 사람의 생각을 듣게 되고 해결책은 협력을 통해 발전된다."
-        }
-    ]
+	"topic": "심해 유기체들을 심해에서 생존할 수 있게하는 특징들",
+	"topicEng": "Features that enable deep-sea organisms to survive in the deep sea.",
+	"content": [
+		{
+			"eng": "Organisms living in the deep sea have adapted to the high pressure by storing water in their bodies, some consisting almost entirely of water.",
+			"kor": "심해에 사는 유기체들은 몸에 물을 저장하여 고압에 적응해 왔고, 일부는 거의 물만으로 구성되어 있다."
+		},
+		{
+			"eng": "Most deep­sea organisms lack gas bladders.",
+			"kor": "대부분의 심해 유기체들은 부레가 없다."
+		},
+		{
+			"eng": "They are cold­blooded organisms that adjust their body temperature to their environment, allowing them to survive in the cold water while maintaining a low metabolism.",
+			"kor": "그들은 냉혈 유기체들로 주변 환경에 체온을 맞추어, 낮은 신진대사를 유지하고 있는 동안 차가운 물에 생존하게 한다."
+		},
+		{
+			"eng": "Many species lower their metabolism so much that they are able to survive without food for long periods of time, as finding the sparse food that is available expends a lot of energy.",
+			"kor": "많은 종들은 먹을 수 있는 드문 음식을 찾는 것이 많은 에너지를 소비하기 때문에 오랜 기간 동안 음식 없이 생존이 가능하도록 그들의 신진대사를 매우 많이 낮춘다."
+		},
+		{
+			"eng": "Many predatory fish of the deep sea are equipped with enormous mouths and sharp teeth, enabling them to hold on to prey and overpower it.",
+			"kor": "심해의 많은 포식성 물고기는 거대한 입과 날카로운 이빨을 가지고 있는데 그것들이 먹이를 붙잡고 제압하게 한다."
+		},
+		{
+			"eng": "Some predators hunting in the residual light zone of the ocean have excellent visual capabilities, while others are able to create their own light to attract prey or a mating partner.",
+			"kor": "해양의 잔광 구역에서 먹이를 잡는 일부 포식자들은 뛰어난 시력을 가지고 있고, 반면 나머지 포식자들은 먹이감 이나 짝을 끌어들이기 위해 자신의 빛을 만들어 낼 수 있다."
+		}
+	]
 }

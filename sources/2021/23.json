@@ -1,34 +1,42 @@
 {
-    "topic": "근대 이전의 창조성의 원천으로서의 신들",
-    "topicEng": "Gods as a source of creativity in the premodern era",
-    "content": [
-        {
-            "eng": "Before the modern scientific era, creativity was attributed to a superhuman force; all novel ideas originated with the gods.",
-            "kor": "근대의 과학적인 시대 이전에 창의성은 초인적인 힘에 기인한 것으로 여겼는데 모든 새로운 생각은 신에게서 유래했다."
-        },
-        {
-            "eng": "After all, how could a person create something that did not exist before <the divine act> of creation?",
-            "kor": "결국 신의 창조 행위 이전에 존재하지 않았던 것을 어떻게 인간이 만들 수 있었겠는가?"
-        },
-        {
-            "eng": "{In fact, the Latin meaning of the verb \u201cinspire\u201d is \u201cto breathe into,\u201d [reflecting] the belief that creative inspiration was similar to the moment in creation when God first breathed life into man.}",
-            "kor": "사실, ‘영감을 주다’라는 동사의 라틴어의 의미는 ‘숨결을 불어넣다’이고 창의적 영감은 신이 처음에 인간에게 생명을 불어 넣었을 때 창조의 순간과 비슷했다는 믿음을 반영한다."
-        },
-        {
-            "eng": "Plato argued that the poet was possessed by divine inspiration, and Plotin wrote that art could only be beautiful if it descended from God.",
-            "kor": "Plato는 시인은 신이 내린 영감에 사로잡혔다고 주장했고 Plotin은 예술은 그것이 신으로부터 내려온 경우에 만 아름다울 수 있다고 썼다."
-        },
-        {
-            "eng": "The artist\u2019s job was not [to imitate] nature but rather [to reveal] {the sacred and transcendent qualities of nature.}",
-            "kor": "예술가의 일은 자연을 모방하는 것이라기보다는  오히려 자연의 신성하고  초월적인  특성을 드러내는  것이었다."
-        },
-        {
-            "eng": "Art could only be {a pale imitation of the perfection of the world of ideas.}",
-            "kor": "예술은 관념[이데아]의 세계의 완벽함을 어설프게 흉내 낸 것에 불과한 것일 수 있었다."
-        },
-        {
-            "eng": "Greek artists did not blindly imitate what they saw in reality; instead they tried to represent the pure, true forms [underlying] reality, [resulting in] a sort of compromise between abstraction and accuracy.",
-            "kor": "그리스의 예술가들은 그들이 현실에서 본 것을 맹목적으로 모방하지 않았고 그 대신 현실의 근저에 있는 순 수하고 진정한 형태를 나타내려고 애썼는데 그 결과 추상과 정확성 간의 일종의 타협을 발생시켰다."
-        }
-    ]
+	"topic": "인간이 침입종 확산에 끼치는 영향",
+	"topicEng": "Human influence on the spread of invasive species.",
+	"content": [
+		{
+			"eng": "Many marine species including oysters, marsh grasses, and fish were deliberately introduced for food or for erosion control, with little knowledge of the impacts they could have.",
+			"kor": "굴, 습지 풀, 그리고 물고기를 포함한 많은 해양 종들은 그들이 미칠 수 있는 영향에 대한 정보가 거의 없는 상태에서 의도적으로 식량이나 침식 방제를 위해 도입되었다."
+		},
+		{
+			"eng": "Fish and shellfish have been intentionally introduced all over the world for aquaculture, providing food and jobs, but they can escape and become a threat to native species, ecosystem function, or livelihoods.",
+			"kor": "어패류는 양식을 위해 전 세계에 의도적으로 도입되어 음식과 일자리를 제공하지만, 탈출해서 토착종, 생태계 기능, 또는 생계에 위협이 될 수 있다."
+		},
+		{
+			"eng": "Atlantic salmon are reared in ocean net­pens in Washington State and British Columbia.",
+			"kor": "대서양 연어는 워싱턴 주와 브리티쉬 컬럼비아의 해양 그물 어장에서 길러진다."
+		},
+		{
+			"eng": "Many escape each year, and they have been recovered in both saltwater and freshwater in Washington State, British Columbia, and Alaska.",
+			"kor": "매년 많은 연어가 탈출해, 그들은 워싱턴 주, 브리티쉬 컬럼비아 알라스카의 해수와 담수에서 발견되어진다."
+		},
+		{
+			"eng": "Recreational fishing can also spread invasive species.",
+			"kor": "여가용 낚시 또한 침입종을 전파시킬 수 있다."
+		},
+		{
+			"eng": "Bait worms from Maine are popular throughout the country.",
+			"kor": "Maine의 미끼용 벌레들은 전국적으로 인기가 있다."
+		},
+		{
+			"eng": "They are commonly packed in seaweed which contains many other organisms.",
+			"kor": "그것들은 보통 많은 다른 유기체들을 포함하는 해초에 싸여 있다."
+		},
+		{
+			"eng": "If the seaweed is discarded, it or the organisms on it can colonize new areas.",
+			"kor": "만약 해초가 버려지면, 해초나 해초 위에 있는 유기체들은 새로운 영역에서 군락을 이룰 수 있다."
+		},
+		{
+			"eng": "Fishing boots, recreational boats, and trailers can pick up organisms at one location and move them elsewhere.",
+			"kor": "낚시용 장화, 여가용 보트와 트레일러는 유기체를 한 장소에서 집어 올려 다른 곳으로 옮길 수 있다."
+		}
+	]
 }

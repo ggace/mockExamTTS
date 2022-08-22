@@ -1,45 +1,38 @@
 {
-    "topic": "일반화의 장단점",
-    "topicEng": "The pros and cons of generalization",
-    "content": [{
-            "eng": "Everyone automatically categorizes and generalizes all the time.",
-            "kor": "모든 사람들은 항상 자동적으로 분류하고 일반화한다."
-        },
-        {
-            "eng": "Unconsciously.",
-            "kor": "무의식적으로 (그렇게 한다)."
-        },
-        {
-            "eng": "It is not a question of being prejudiced or enlightened.",
-            "kor": "그것은 편견을 갖고 있다거나 계몽되어 있다는 것의 문제가 아니다."
-        },
-        {
-            "eng": "Categories are absolutely <necessary> for us to function.",
-            "kor": "범주는 우리가 (정상적으로) 활동하는 데 반드시 필요하다."
-        },
-        {
-            "eng": "They give structure to our thoughts.",
-            "kor": "그것들은 우리의 사고에 체계를 준다."
-        },
-        {
-            "eng": "Imagine if we [saw] every item and every scenario as truly <unique> \u2015 we [would not] even [have] a language to describe the world around us.",
-            "kor": "만일 우리가 모든 품목과 모든 있을 법한 상황을 정말로 유일무이한 것으로 본다고 상상해 보라. 그러면 우리 는 우리 주변의 세계를 설명할 언어조차 갖지 못할 것이다."
-        },
-        {
-            "eng": "But the necessary and useful instinct to generalize can <distort> our world view.",
-            "kor": "그러나 필요하고 유용한 일반화하려는 본능은 우리의 세계관을 왜곡할 수 있다."
-        },
-        {
-            "eng": "It can make us mistakenly group together things, or people, or countries that are actually very <different>.",
-            "kor": "그것은 우리가 실제로는 아주 다른 사물들이나, 사람들, 혹은 나라들을 하나로 잘못 묶게 만들 수 있다."
-        },
-        {
-            "eng": "It can make us <assume> everything or everyone in one category is <similar>.",
-            "kor": "그것은 우리가 하나의 범주 안에 있는 모든 것이나 모든 사람이 비슷하다고 가정하게 만들 수 있다."
-        },
-        {
-            "eng": "And,  maybe,  most unfortunate  of  all,  it  can [make us  jump]  to  conclusions  about  a whole category based on a few, or even just one, <unusual> example.",
-            "kor": "그리고 어쩌면 모든 것 중에서 가장 유감스러운 것은, 그것이 우리로 하여금 몇 가지, 또는 심지어 고작 하나 의 특이한 사례를 바탕으로 전체 범주에 대해 성급하게 결론을 내리게 만들 수 있다는 것이다."
-        }
-    ]
+	"topic": "임무 종료된 인공위성을 제거하는 어려움과 그에 대한 해결책 모색",
+	"topicEng": "Difficulty in removing satellites that have ended their missions and seeking solutions.",
+	"content": [
+		{
+			"eng": "The United Nations asks that all companies remove their satellites from orbit within 25 years after the end of their mission.",
+			"kor": "국제연합은 모든 기업들이 인공위성의 임무 종료 후 25년 이내에 위성을 궤도에서 제거해 줄 것을 요청하고 있다."
+		},
+		{
+			"eng": "This is tricky to enforce, though, because satellites can (and often do) fail.",
+			"kor": "하지만 인공위성이 작동하지 않을 수 있기(그리고 종종 작동하지 않기) 때문에 이것은 시행하기에 까다롭다."
+		},
+		{
+			"eng": "To tackle this problem, several companies around the world have come up with novel solutions.",
+			"kor": "이 문제를 해결하기 위해 전세계의 몇몇 회사들이 새로운 해결책을 내놓았다."
+		},
+		{
+			"eng": "These include removing dead satellites from orbit and dragging them back into the atmosphere, where they will burn up.",
+			"kor": "이것은 수명이 다한 인공위성을 궤도에서 제거하고, 대기권으로 다시 끌어들이는 것을 포함하는데, 거기에서 그것은 다 타 버리게 될 것이다."
+		},
+		{
+			"eng": "Ways we could do this include using a harpoon to grab a satellite, catching it in a huge net, using magnets to grab it, or even firing lasers to heat up the satellite, increasing its atmospheric drag so that it falls out of orbit.",
+			"kor": "우리가 이것을 할 수 있는 방법은 위성이 궤도에서 떨어져 나오도록 대기 항력을 증가시키면서 작살을 이용해서 위성을 잡거나, 거대한 그물로 그것을 잡거나, 자석을 이용하여 위성을 잡거나, 레이저를 발사하여 위성을 가열하는 것을 포함한다."
+		},
+		{
+			"eng": "However, these methods are only useful for large satellites orbiting Earth.",
+			"kor": "하지만, 이러한 방법은 지구 궤도를 도는 큰 위성들에게만 유용하다."
+		},
+		{
+			"eng": "There isn’t really a way for us to pick up smaller pieces of debris such as bits of paint and metal.",
+			"kor": "우리가 페인트 조각이나 금속 같은 작은 잔해물을 집어들 수 있는 방법은 정말로 없다."
+		},
+		{
+			"eng": "We just have to wait for them to naturally re­enter Earth’s atmosphere.",
+			"kor": "우리는 그것들이 자연적으로 지구의 대기로 다시 들어오기를 기다려야 할 뿐이다."
+		}
+	]
 }
