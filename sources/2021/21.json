@@ -3,27 +3,27 @@
 	"topicEng": "The creative team exhibits paradoxical features of accelerating the process of new ideas by assembling contradictory perspectives.",
 	"content" : [
 		{
-			"eng": "The creative team exhibits paradoxical characteristics.",
+			"eng": "The creative team exhibits {paradoxical characteristics.}",
 			"kor": "창의적인 팀은 역설적인 특징을 보인다."
 		},
 		{
-			"eng": "It shows tendencies of thought and action that we\u2019d assume to be mutually exclusive or contradictory.",
+			"eng": "It shows tendencies of thought and action that we\u2019d assume [to be] mutually <exclusive> or <contradictory>.",
 			"kor": "그것은 우리가 상호 배타적이거나 모순된다고 가정하는 생각과 행동의 경향을 보여준다."
 		},
 		{
-			"eng": "For example, to do its best work, a team needs deep knowledge of subjects relevant to the problem it\u2019s trying to solve, and a mastery of the processes involved.",
+			"eng": "For example, to do its best work, a team needs deep knowledge of subjects relevant to the problem it\u2019s trying to solve, and a mastery of the processes [involved].",
 			"kor": "예를 들어, 최고의 작업을 수행하기 위해서는 팀이 해결하려는 문제와 관련된 주제에 대한 깊은 지식과 수반되는 과정의 숙달이 필요하다."
 		},
 		{
-			"eng": "But at the same time, the team needs fresh perspectives that are unencumbered by the prevailing wisdom or established ways of doing things.",
+			"eng": "{But at the same time, the team needs <fresh perspectives> that are unencumbered by the prevailing wisdom or established ways of doing things.}",
 			"kor": "그러나 동시에, 널리 퍼져있는 지혜나 일을 하는 입증된 방법에 구애받지 않는 신선한 관점이 필요하다."
 		},
 		{
-			"eng": "Often called a \u201cbeginner\u2019s mind,\u201d this is the newcomers\u2019 perspective: people who are curious, even playful, and willing to ask anything \u2014 no matter how naive the question may seem \u2014 because they don\u2019t know what they don\u2019t know.",
+			"eng": "Often called a \u201c<beginner\u2019s mind>,\u201d this is the <newcomers\u2019 perspective>: people who are [curious], even [playful], and [willing] to ask anything \u2014 [no matter how] naive the question may seem \u2014 because they don\u2019t know what they don\u2019t know.",
 			"kor": "종종 ‘초심자의 마음’ 이라고 불리는 이것은 신참의 관점이다. 즉, 이런 사람들은 호기심 많고, 심지어 장난기 넘치고, 질문이 아무리 순진해 보이더라도 무엇이든 기꺼이 물어보는데, 이것은 자신이 모르는 것이 무엇인지도 모르기 때문이다."
 		},
 		{
-			"eng": "Thus, bringing together contradictory characteristics can accelerate the process of new ideas.",
+			"eng": "Thus, {bringing together contradictory characteristics can accelerate the process of new ideas.}",
 			"kor": "따라서 모순되는 특징들을 한데 모으는 것이 새로운 아이디어의 과정을 가속화할 수 있다."
 		}
 	]
