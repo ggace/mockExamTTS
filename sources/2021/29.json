@@ -3,7 +3,7 @@
 	"topicEng": "Features that enable deep-sea organisms to survive in the deep sea.",
 	"content": [
 		{
-			"eng": "Organisms living in the deep sea have adapted to the high pressure by storing water in their bodies, some consisting almost entirely of water.",
+			"eng": "Organisms [living] in the deep sea [have] adapted to the high pressure by storing water in their bodies, some [consisting] almost entirely of water.",
 			"kor": "심해에 사는 유기체들은 몸에 물을 저장하여 고압에 적응해 왔고, 일부는 거의 물만으로 구성되어 있다."
 		},
 		{
@@ -11,19 +11,19 @@
 			"kor": "대부분의 심해 유기체들은 부레가 없다."
 		},
 		{
-			"eng": "They are cold­blooded organisms that adjust their body temperature to their environment, allowing them to survive in the cold water while maintaining a low metabolism.",
+			"eng": "They are cold­blooded organisms that adjust their body temperature to their environment, [allowing] them [to survive] in the cold water while [maintaining] a low metabolism.",
 			"kor": "그들은 냉혈 유기체들로 주변 환경에 체온을 맞추어, 낮은 신진대사를 유지하고 있는 동안 차가운 물에 생존하게 한다."
 		},
 		{
-			"eng": "Many species lower their metabolism so much that they are able to survive without food for long periods of time, as finding the sparse food that is available expends a lot of energy.",
+			"eng": "Many species lower their metabolism [so] [much] [that] they are able to survive without food for long periods of time, as [finding] the sparse food [that is] available [expends] a lot of energy.",
 			"kor": "많은 종들은 먹을 수 있는 드문 음식을 찾는 것이 많은 에너지를 소비하기 때문에 오랜 기간 동안 음식 없이 생존이 가능하도록 그들의 신진대사를 매우 많이 낮춘다."
 		},
 		{
-			"eng": "Many predatory fish of the deep sea are equipped with enormous mouths and sharp teeth, enabling them to hold on to prey and overpower it.",
+			"eng": "Many predatory [fish] of the deep sea are equipped with enormous mouths and sharp teeth, [enabling] them [to hold] on to prey and [overpower] [it].",
 			"kor": "심해의 많은 포식성 물고기는 거대한 입과 날카로운 이빨을 가지고 있는데 그것들이 먹이를 붙잡고 제압하게 한다."
 		},
 		{
-			"eng": "Some predators hunting in the residual light zone of the ocean have excellent visual capabilities, while others are able to create their own light to attract prey or a mating partner.",
+			"eng": "Some predators [hunting] in the residual light zone of the ocean [have] excellent visual capabilities, while others are able to create their own light to attract prey or a mating partner.",
 			"kor": "해양의 잔광 구역에서 먹이를 잡는 일부 포식자들은 뛰어난 시력을 가지고 있고, 반면 나머지 포식자들은 먹이감 이나 짝을 끌어들이기 위해 자신의 빛을 만들어 낼 수 있다."
 		}
 	]
