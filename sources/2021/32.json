@@ -3,7 +3,7 @@
 	"topicEng": "philosophical activity based on the recognition of ignorance.",
 	"content": [
 		{
-			"eng": "Philosophical activity is based on the recognition of ignorance.",
+			"eng": "Philosophical activity is based on the {recognition of <ignorance>}.",
 			"kor": "철학적 활동은 무지의 인식에 기초를 둔다."
 		},
 		{
@@ -11,11 +11,11 @@
 			"kor": "지식에 대한 철학자의 갈망은 그 답이 결코 발견되지 않는다 하더라도 질문에 대한 더 나은 답을 찾으려는 시도를 통해 보이게 된다."
 		},
 		{
-			"eng": "At the same time, a philosopher also knows that being too sure can hinder the discovery of other and better possibilities.",
+			"eng": "At the same time, a philosopher also knows that [being] too sure can <hinder> the discovery of other and better possibilities.",
 			"kor": "동시에, 철학자는 또한 지나치게 확신하는 것이 다른 가능성들과 더 나은 가능성들의 발견을 방해할 수 있다는 것을 알고 있다."
 		},
 		{
-			"eng": "In a philosophical dialogue, the participants are aware that there are things they do not know or understand.",
+			"eng": "In a philosophical dialogue, the participants are aware [that] there are {things they do not know or understand}.",
 			"kor": "철학적 대화에서 참여자들은 그들이 알지 못하거나 이해하지 못하는 것이 있다는 것을 인식한다."
 		},
 		{
@@ -23,11 +23,11 @@
 			"kor": "그 대화의 목표는 누구라도 미리 알지 못했거나 이해하지 못했다는 생각에 도달하는 것이다."
 		},
 		{
-			"eng": "In traditional schools, where philosophy is not present, students often work with factual questions, they learn specific content listed in the curriculum, and they are not required to solve philosophical problems.",
+			"eng": "In traditional schools, [where] philosophy is not <present>, students often work with factual questions, they learn specific content [listed] in the curriculum, and they are not required to solve philosophical problems.",
 			"kor": "철학이 존재하지 않는 전통적 학교에서, 학생들은 흔히 사실적 질문에 대해 공부하고, 교육과정에 실린 특정한 내용을 배우며, 철학적인 문제를 해결하도록 요구받지 않는다."
 		},
 		{
-			"eng": "However, we know that awareness of what one does not know can be a good way to acquire knowledge.",
+			"eng": "{However, we know that awareness of what one does not know can be a good way to <acquire> knowledge.}",
 			"kor": "하지만 우리는 누구라도 알지 못하는 것에 대한 인식이 지식을 습득하는 좋은 방법이 될 수 있다는 것을 안다."
 		},
 		{
@@ -35,11 +35,11 @@
 			"kor": "지식과 이해는 사색과 토론을 통해 발달한다."
 		},
 		{
-			"eng": "Putting things into words makes things clearer.",
+			"eng": "[Putting] things into words [makes] things< [clearer] >.",
 			"kor": "생각을 말로 표현하는 것은 생각을 더 분명하게 만든다."
 		},
 		{
-			"eng": "Therefore, students must not be afraid of saying something wrong or talking without first being sure that they are right.",
+			"eng": "Therefore, students must not be afraid of [saying] [something wrong] or [talking] without first being sure that they are right.",
 			"kor": "따라서 학생들은 잘못된 무언가를 말하거나 처음에 그들이 옳다는 것을 확신하지 않고 이야기하는 것을 두려워해서는 안 된다."
 		}
 	]
