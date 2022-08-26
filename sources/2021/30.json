@@ -3,7 +3,7 @@
 	"topicEng": "Humanity must consider biodiversity in agriculture for survival.",
 	"content": [
 		{
-			"eng": "Human innovation in agriculture has unlocked modifications in apples, tulips, and potatoes that never would have been realized through a plant’s natural reproductive cycles.",
+			"eng": "Human innovation in agriculture has unlocked modifications in apples, tulips, and potatoes that never [would have been realized] through a plant’s natural reproductive cycles.",
 			"kor": "농업에서 인류의 혁신은 식물의 자연적 번식 주기를 통해서는 결코 실현할 수 없었을 사과, 튤립, 감자에 있어 개량을 가능케 했다."
 		},
 		{
@@ -11,23 +11,23 @@
 			"kor": "이러한 경작 과정은 소비자들이 식료품 가게에서 찾는, 몇몇의 알아볼 수 있는 채소나 과일을 만들어냈다."
 		},
 		{
-			"eng": "However, relying on only a few varieties of cultivated crops can leave humankind vulnerable to starvation and agricultural loss if a harvest is destroyed.",
+			"eng": "However, [relying] on only [a few varieties of] cultivated crop[s] can leave humankind< [vulnerable] >to starvation and agricultural loss if a harvest [is destroyed].",
 			"kor": "그러나 만약 추수가 망쳐지면 소수의 재배된 작물에만 의존하는 것은 인류를 기아나 농업의 손실에 취약한 상태에 둘 수도 있다."
 		},
 		{
-			"eng": "For example, a million people died over the course of three years during the Irish potato famine because the Irish relied primarily on potatoes and milk to create a nutritionally balanced meal.",
+			"eng": "{For example, a million people died over the course of three years during the Irish potato famine because the Irish relied< [primarily] >on potatoes and milk to create a nutritionally balanced meal.}",
 			"kor": "예를 들어, 아일랜드 사람들이 영양학적으로 균형 있는 식사를 마련하기 위해 주로 감자와 우유에 의존했기 때문에, 아일랜드 감자 기근 (사태) 동안 백만 명의 사람들이 3년의 추이에 걸쳐 사망했다."
 		},
 		{
-			"eng": "In order to continue its symbiotic relationship with cultivated plants, humanity must allow for biodiversity and recognize the potential drawbacks that monocultures of plants can introduce.",
+			"eng": "In order to continue its symbiotic relationship with cultivated plants, humanity must {allow for biodiversity} and recognize {the potential drawbacks that monocultures of plants can introduce}.",
 			"kor": "재배 식물과 공생 관계를 유지하려면, 인류는 생물의 다양성을 고려해야만 하고 식물의 단일 경작이 가져올 수 있는 잠재적 결점에 대해서도 인식해야만 한다."
 		},
 		{
-			"eng": "Planting seeds of all kinds, even if they don’t seem immediately useful or profitable, can ensure the longevity of those plants for generations to come.",
+			"eng": "[Planting] seeds of all kinds, even if they don’t [seem] immediately [useful or profitable], can ensure the longevity of those plants for generations to come.",
 			"kor": "설령 그것들이 당장은 유용하고 이득이 된다고 보이지는 않아도 모든 종류의 씨앗을 심는 것은 다가올 세대들을 위해 그러한 식물들이 오래 지속되는 것을 보장해 줄 수 있다."
 		},
 		{
-			"eng": "A balance must be struck between nature’s capacity for wildness and humanity’s desire for control.",
+			"eng": "A balance must be struck between nature’s capacity for wildness and humanity’s desire for <control>.",
 			"kor": "야생에 대한 자연의 능력과 통제에 대한 인간의 욕망 사이에서 균형은 유지되어야 한다."
 		}
 	]
