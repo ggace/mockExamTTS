@@ -1,27 +1,11 @@
-string = """Without guidance from their teacher, students will not embark on a
-journey of personal development that recognizes the value of
-cooperation. Left to their own devices, they will instinctively become
-increasingly competitive with each other. They will compare scores,
-reports, and feedback within the classroom environment ― just as they
-do in the sporting arena. We don’t need to teach our students about
-winners and losers. The playground and the media do that for them.
-However, we do need to teach them that there is more to life than
-winning and about the skills they need for successful cooperation. A
-group working together successfully requires individuals with a multitude
-of social skills, as well as a high level of interpersonal awareness. While
-some students inherently bring a natural understanding of these skills
-with them, they are always in the minority. To bring cooperation
-between peers into your classroom, you need to teach these skills
-consciously and carefully, and nurture them continuously throughout the
-school years.
-"""
+string = """In the West, an individual composer writes the music long before it is performed. The patterns and melodies we hear are pre-planned and intended. Some African tribal music, however, results from collaboration by the players on the spur of the moment. The patterns heard, whether they are the silences when all players rest on a beat or the accented beats when all play together, are not planned but serendipitous. When an overall silence appears on beats 4 and 13, it is not because each musician is thinking, “On beats 4 and 13, I will rest.” Rather, it occurs randomly as the patterns of all the players converge upon a simultaneous rest. The musicians are probably as surprised as their listeners to hear the silences at beats 4 and 13. Surely that surprise is one of the joys tribal musicians experience in making their music."""
 
 string = ".\n".join(" ".join(string.split("\n")).split(". "))
-
+print(string)
 import json
 
-basicPath = r"sources\2021"
-problem = 20
+basicPath = r"sources\2020"
+problem = 39
 
 string = string.strip()
 stringPart = string.split("\n")

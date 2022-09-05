@@ -1,0 +1,42 @@
+{
+	"topic" : "동일한 산업의 회사들이 밀집하는 이유", 
+	"topicEng": "Why companies in the same industry are clustered",
+	"content" : [
+		{
+			"eng": "Firms in almost every industry tend to be clustered.",
+			"kor": "거의 모든 산업의 회사들은 밀집되는 경향이 있다."
+		},
+		{
+			"eng": "Suppose you threw darts at random on a map of the United States.",
+			"kor": "당신이 미국 지도에 무작위로 다트를 던진다고 가정해 보라."
+		},
+		{
+			"eng": "You\u2019d find the holes left by the darts to be more or less evenly distributed across the map.",
+			"kor": "당신은 다트에 의해 남겨진 구멍들이 지도 전체에 다소 고르게 분포된 것을 보게 될 것이다."
+		},
+		{
+			"eng": "But the real map of any given industry looks nothing like that; it looks more as if someone had thrown all the darts in the same place.",
+			"kor": "하지만 어떤 특정 산업의 실제 지도는 전혀 그렇게 보이지 않는다. 그것은 마치 어떤 사람이 모든 다트를 같은 지역에 던진 것처럼 보인다."
+		},
+		{
+			"eng": "This is probably in part because of reputation; buyers may be suspicious of a software firm in the middle of the cornfields.",
+			"kor": "이것은 아마 부분적으로는 평판 때문일 것이다. 구매자들은 옥수수밭 한가운데 있는 소프트웨어 회사를 수상쩍게 여길 것이다."
+		},
+		{
+			"eng": "It would also be hard to recruit workers if every time you needed a new employee you had to persuade someone to move across the country, rather than just poach one from your neighbor.",
+			"kor": "당신이 새로운 직원을 필요로 할 때마다 근처에서 인력을 빼내기 보다 는 오히려, 누군가에게 나라를 가로질러 이주하도록 설득해야 한다면 직원을 채용하는 것이 또한 어려울 것이다."
+		},
+		{
+			"eng": "There are also regulatory reasons: zoning laws often try to concentrate dirty industries in one place and restaurants and bars in another.",
+			"kor": "또한 규제상의 이유들도 있다. 토지 사용 제한법들은 종종 공해 유발 산업들을 한 지역에, 식당들과 술집들을 다른 지역에 집중시키려 노력한다."
+		},
+		{
+			"eng": "Finally, people in the same industry often have similar preferences (computer engineers like coffee, financiers show off with expensive bottles of wine).",
+			"kor": "마지막으로, 같은 산업에 종사하는 사람들은 종종 유사한 선호도를 가진다. (컴퓨터 엔지니어들은 커피를 좋아하고 금융업 종사자들은 비싼 와인을 가지고 뽐낸다.)"
+		},
+		{
+			"eng": "Concentration makes it easier to provide the amenities they like.",
+			"kor": "집중이 그들이 좋아하는 생활편의시설을 제공하는 것을 더 쉽게 해준다."
+		}
+	]
+}
