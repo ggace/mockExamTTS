@@ -1,6 +1,9 @@
 class Controller extends React.Component {
     constructor(props) {
         super(props);
+        this.state = {
+            korVisibleState : true
+        };
     }
 
     render() {
@@ -37,9 +40,17 @@ class Controller extends React.Component {
 
     hideKor(){
         let ele = document.getElementsByClassName("kor")
-        for(let i = 0; i < ele.length; i++){
-            ele[i].style.color = "white"
+        if(this.state.korVisibleState){
+            for(let i = 0; i < ele.length; i++){
+                ele[i].style.color = "white"
+            }
         }
+        else{
+            for(let i = 0; i < ele.length; i++){
+                ele[i].style.color = "black"
+            }
+        }
+        
     }
 
     yearChange(){
