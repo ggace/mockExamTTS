@@ -34,7 +34,7 @@ class Controller extends React.Component {
                 <span id="speed">{setting.speed}</span>
                 <button onClick={this.speedUp.bind(this)} id="speedController_add">+</button>
 
-                <button onClick={this.hideKor.bind(this)} id="hide_kor">hide kor</button>
+                <button onClick={this.hideKor.bind(this)} id="hide_kor">hㅏ</button>
         </div>)
     }
 
