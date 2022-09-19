@@ -1,0 +1,46 @@
+{
+	"topic": "중력에 영향을 미치는 두가지 요소",
+	"topicEng": "Two factors affecting gravity",
+	"content": [
+		{
+			"eng": "You know that forks don’t fly off to the Moon and that neither apples nor anything else on Earth cause the Sun to crash down on us.",
+			"kor": "여러분은 포크가 달로 날아가지 않으며 사과나 지구상의 그 어떤 것도 태양이 우리에게 추락하도록 하지 않는다는 것을 알고 있 다."
+		},
+		{
+			"eng": "The reason these things don’t happen is that the strength of gravity’s pull depends on two things.",
+			"kor": "이런 일들이 일어나지 않는 이유는 중력의 당기는 힘의 강도가 두 가지에 따라 달라지기 때문이다."
+		},
+		{
+			"eng": "The first is the mass of the object.",
+			"kor": "첫째는 물체의 질량이다."
+		},
+		{
+			"eng": "The apple is very small, and doesn’t have much mass, so its pull on the Sun is absolutely tiny, certainly much smaller than the pull of all the planets.",
+			"kor": "사과는 매우 작고 큰 질량을 가지고 있지 않아서 이것이 태양에 작용하는 인력은 분명히 작은데, 확실히 모든 행성의 인력보다 훨씬 작다."
+		},
+		{
+			"eng": "The Earth has more mass than tables, trees, or apples, so almost everything in the world is pulled towards the Earth.",
+			"kor": "지구는 탁자, 나무, 또는 사과보다 더 큰 질량을 가지고 있어서 지구상의 거의 모든 것이 지구를 향해 당겨진다."
+		},
+		{
+			"eng": "That’s why apples fall from trees.",
+			"kor": "그것이 나무에서 사과가 떨어지는 이유다."
+		},
+		{
+			"eng": "Now, you might know that the Sun is much bigger than Earth and has much more mass.",
+			"kor": "이제 여러분은 태양이 지구보다 훨씬 크고 훨씬 더 많은 질량을 가지고 있다는 것을 알고 있을 것이다."
+		},
+		{
+			"eng": "So why don’t apples fly off towards the Sun?",
+			"kor": "그렇다면 왜 사과는 태양을 향해 날아가지 않을까?"
+		},
+		{
+			"eng": "The reason is that the pull of gravity also depends on the distance to the object doing the pulling.",
+			"kor": "이유는 중력의 당기는 힘이 잡아당기는 물체와의 거리에 따라 또한 달라지기 때문이다."
+		},
+		{
+			"eng": "Although the Sun has much more mass than the Earth, we are much closer to the Earth, so we feel its gravity more.",
+			"kor": "태양이 지구보다 훨씬 더 많은 질량을 가지고 있지만 우리가 지구에 훨씬 가까워서 지구의 중력을 더 많이 느낀다."
+		}
+	]
+}
