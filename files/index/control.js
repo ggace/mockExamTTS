@@ -34,7 +34,7 @@ class Controller extends React.Component {
                 <span id="speed">{setting.speed}</span>
                 <button onClick={this.speedUp.bind(this)} id="speedController_add">+</button>
 
-                <button onClick={this.hideKor.bind(this)} id="hide_kor">hㅏ</button>
+                <button onClick={this.hideKor.bind(this)} id="hide_kor">hk</button>
         </div>)
     }
 
@@ -44,11 +44,17 @@ class Controller extends React.Component {
             for(let i = 0; i < ele.length; i++){
                 ele[i].style.color = "white"
             }
+            this.setState({
+                korVisibleState: false
+            });
         }
         else{
             for(let i = 0; i < ele.length; i++){
                 ele[i].style.color = "black"
             }
+            this.setState({
+                korVisibleState: true
+            });
         }
         
     }
