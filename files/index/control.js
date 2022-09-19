@@ -30,7 +30,16 @@ class Controller extends React.Component {
                 <button onClick={this.speedDown.bind(this)} id="speedController_reduce">-</button>
                 <span id="speed">{setting.speed}</span>
                 <button onClick={this.speedUp.bind(this)} id="speedController_add">+</button>
+
+                <button onClick={this.hideKor.bind(this)} id="hide_kor">hide kor</button>
         </div>)
+    }
+
+    hideKor(){
+        let ele = document.getElementsByClassName("kor")
+        for(let i = 0; i < ele.length; i++){
+            ele[i].style.color = "white"
+        }
     }
 
     yearChange(){
